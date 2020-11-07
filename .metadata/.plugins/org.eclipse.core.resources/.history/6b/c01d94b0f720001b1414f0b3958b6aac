@@ -1,0 +1,64 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.StringTokenizer;
+
+// 최소 스패닝 트리
+public class Main1197 {
+	public static int V, E, arr[][];
+	public static List<Graph> list;
+	class Graph {
+		int start;
+		int end;
+		int weight;
+		
+		public Graph(int s, int e, int w) {
+			this.start = s;
+			this.end = e;
+			this.weight = w;
+		}
+		
+		public int getStart() {
+			return start;
+		}
+		public void setStart(int start) {
+			this.start = start;
+		}
+		public int getEnd() {
+			return end;
+		}
+		public void setEnd(int end) {
+			this.end = end;
+		}
+		public int getWeight() {
+			return weight;
+		}
+		public void setWeight(int weight) {
+			this.weight = weight;
+		}
+		
+	}
+	
+	public static void main(String[] args) throws Exception {
+		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(bf.readLine());
+		V = Integer.parseInt(st.nextToken());
+		E = Integer.parseInt(st.nextToken());
+		list = new ArrayList<Graph>();
+		arr = new int[E][3];
+		
+		for(int i = 0; i < E; i++) {
+			st = new StringTokenizer(bf.readLine());
+			int s = Integer.parseInt(st.nextToken());
+			int e = Integer.parseInt(st.nextToken());
+			int w = Integer.parseInt(st.nextToken());
+			list.add(new Graph(s, e, w));
+//			for(int j = 0; j < 3; j++) {
+//				arr[i][j] = Integer.parseInt(st.nextToken());
+//			}
+ 		}
+		
+		
+	}
+}

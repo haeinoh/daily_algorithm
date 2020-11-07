@@ -1,0 +1,8 @@
+
+public class Solution68644 {
+	public static int numbers[] = {2, 1, 3, 4, 1}; // 임시 지워
+	public static void main(String[] args) {
+
+		
+	}
+}
