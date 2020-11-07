@@ -5,8 +5,9 @@
 bin/
 .classpath
 .project
-.iml
-.log
+*.iml
+*.log
+
 # : comments
 
 # no .a files
