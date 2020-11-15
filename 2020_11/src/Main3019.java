@@ -1,33 +1,35 @@
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main3019 {
 	public static int C, P, arr[][], height[];
 	
-	public static int solve(String str) {
+	public static int solve(int tmp[]) {
 		int count = 0;
-		int tmp[] = new int[str.length()];
-		for(int i = 0; i < tmp.length; i++) 
-			tmp[i] = Character.getNumericValue(str.charAt(i));
 		
-		System.out.println(Arrays.toString(tmp));
-		System.out.println("=======================");
+		// 체크해야하는 테트리스 넓이만큼 빼고 계산
 		for(int i = 0; i <= C-tmp.length; i++) {
 			int num = height[i];
-			System.out.println("흠 " + i + " ====== "+ num);
-			boolean flag = false;
-			loop:for(int j = 0; j < tmp.length; j++) {
-				if(num > 0) {
-					System.out.println("j " + arr[num-1+tmp[j]][i+j]);
-					if(arr[num-1+tmp[j]][i+j] == 1) continue;
-					else {
-						flag = true;
-						break loop;
+			int cnt = 0;
+			
+			for(int j = 0; j < tmp.length-1; j++) {
+				if(tmp[0] >= tmp[j+1]) { // 기준 높이가 다음 높이보다 크거나 같을 때
+					int xx = tmp[0] - tmp[j+1];
+					if(num - xx >= 0) {
+						if(arr[num-xx][i+j+1] == 0) {
+							if(num-xx-1 == -1) cnt++; // 범위를 벗어나는 경우
+							if(num-xx-1 >= 0 && arr[num-xx-1][i+j+1] == 1) cnt++;
+						}
+					}
+				} else { // 기준 높이가 다음 높이보다 작을 떼
+					int xx = tmp[0] + tmp[j+1];
+					if(num + xx >= 0) {
+						if(arr[num+xx][i+j+1] == 0) {
+							if(num+xx-1 >= 0 && arr[num+xx-1][i+j+1] == 1) cnt++;
+						}
 					}
 				}
 			}
-			if(!flag) count++;
-			System.out.println("/// " + flag + " " +count);
+			if(cnt == (tmp.length-1)) count++;
 		}
 		return count;
 	}
@@ -51,37 +53,37 @@ public class Main3019 {
 		
 		switch(P) {
 			case 1:
-				answer += solve("0");
-				answer += solve("0000");
+				answer += solve(new int[] {0});
+				answer += solve(new int[] {0, 0, 0, 0});
 				break;
 			case 2:
-				answer += solve("00");
+				answer += solve(new int[] {0, 0});
 				break;
 			case 3: 
-				answer += solve("001");
-				answer += solve("10");
+				answer += solve(new int[] {0, 0, 1});
+				answer += solve(new int[] {1, 0});
 				break;
 			case 4:
-				answer += solve("100");
-				answer += solve("01");
+				answer += solve(new int[] {1, 0, 0});
+				answer += solve(new int[] {0, 1});
 				break;
 			case 5:
-				answer += solve("000"); // ㅗ
-				answer += solve("10"); // ㅓ
-				answer += solve("101"); // ㅜ
-				answer += solve("01"); // ㅏ
+				answer += solve(new int[] {0, 0, 0}); // ㅗ
+				answer += solve(new int[] {1, 0}); // ㅓ
+				answer += solve(new int[] {1, 0, 1}); // ㅜ
+				answer += solve(new int[] {0, 1}); // ㅏ
 				break;
 			case 6:
-				answer += solve("000");
-				answer += solve("20");
-				answer += solve("011");
-				answer += solve("00");
+				answer += solve(new int[] {0, 0, 0});
+				answer += solve(new int[] {2, 0});
+				answer += solve(new int[] {0, 1, 1});
+				answer += solve(new int[] {0, 0});
 				break;
 			case 7:
-				answer += solve("000");
-				answer += solve("00");
-				answer += solve("110");
-				answer += solve("02");
+				answer += solve(new int[] {0, 0, 0});
+				answer += solve(new int[] {0, 0});
+				answer += solve(new int[] {1, 1, 0});
+				answer += solve(new int[] {0, 2});
 				break;
 		}
 		System.out.println(answer);
