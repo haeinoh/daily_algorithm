@@ -1,11 +1,11 @@
-//https://www.acmicpc.net/problem/15662
+//https://www.acmicpc.net/problem/14891
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.LinkedList;
 import java.util.StringTokenizer;
 
-public class Main15662 {
+public class Main14891 {
 	public static int T;
 	public static LinkedList<Integer> list[];
 	
@@ -30,21 +30,20 @@ public class Main15662 {
 	
 	public static void main(String[] args) throws Exception{
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-		StringTokenizer st = new StringTokenizer(bf.readLine());
 		int count = 0;
-		T = Integer.parseInt(st.nextToken());
+		T = 4;
 		list = new LinkedList[T];
 		for(int i = 0; i < T; i++) list[i] = new LinkedList();
 		
 		for(int i = 0; i < T; i++) {
-			st = new StringTokenizer(bf.readLine());
+			StringTokenizer st = new StringTokenizer(bf.readLine());
 			String str = st.nextToken();
 			for(int j = 0; j < 8; j++) {
 				list[i].add(Character.getNumericValue(str.charAt(j)));
 			}
 		}
 		
-		st = new StringTokenizer(bf.readLine());
+		StringTokenizer st = new StringTokenizer(bf.readLine());
 		int R = Integer.parseInt(st.nextToken());
 		for(int i = 0; i < R; i++) {
 			st = new StringTokenizer(bf.readLine());
@@ -56,8 +55,10 @@ public class Main15662 {
 			rotate(n, r);
 		}
 		
-		for(int i = 0; i < T; i++) 
-			if(list[i].get(0) == 1) count++;
+		count += list[0].get(0) == 0 ? 0 : 1;
+		count += list[1].get(0) == 0 ? 0 : 2;
+		count += list[2].get(0) == 0 ? 0 : 4;		
+		count += list[3].get(0) == 0 ? 0 : 8;
 
 		System.out.println(count);
 	}
