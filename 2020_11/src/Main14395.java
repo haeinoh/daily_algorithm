@@ -70,7 +70,6 @@ public class Main14395 {
 		S = sc.nextLong();
 		T = sc.nextLong();	
 		answer = "";
-
 		if(S == T) answer = "0";
 		else {			
 			q = new LinkedList<Temp>();
