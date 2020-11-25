@@ -4,7 +4,6 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
-
 public class Main1966 {
 	public static int N, M, answer;
 	public static Integer arr[];
