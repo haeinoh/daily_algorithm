@@ -1,6 +1,6 @@
 # Daily Algorithm
 
-##### *목표 : 쉬운 문제라도 매일 하루에 한 문제씩 꾸준히 푸는 것* (2020/11/07 ~)
+##### *쉬운 문제라도 매일 하루에 한 문제씩 꾸준히 * (2020/11/07 ~)
 
 
 
@@ -82,12 +82,4 @@
 * [추석 트래픽](https://programmers.co.kr/learn/courses/30/lessons/17676)
 * [구명보트](https://programmers.co.kr/learn/courses/30/lessons/42885)
 * [압축](https://programmers.co.kr/learn/courses/30/lessons/17684) ❓
-
   
-
-
-
-
-
-
-
