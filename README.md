@@ -1,11 +1,8 @@
 # Daily Algorithm
 
-##### *목표 : 쉬운 문제라도 매일 하루에 한 문제씩 꾸준히 푸는 것*
+##### *목표 : 쉬운 문제라도 매일 하루에 한 문제씩 꾸준히 푸는 것* (2020/11/07 ~)
 
-* [백준](https://www.acmicpc.net)
-* [프로그래머스](https://programmers.co.kr)
 
---------------------------------------------------------------------------------------
 
 ❓ 해결 못한 문제
 
@@ -15,14 +12,16 @@
 
 --------------------------------------------------------------------------------------------------------------------------------
 
-### 백준
+### [백준](https://www.acmicpc.net)
 
 #### 트리
 
 * [트리](https://www.acmicpc.net/problem/1068)
+
 * [최소 스패닝 트리](https://www.acmicpc.net/problem/1197)
 
 * [트리순회](https://www.acmicpc.net/problem/1991)
+
 * [트리의 부모 찾기](https://www.acmicpc.net/problem/11725)
 
 * [도로네트워크](https://www.acmicpc.net/problem/3176) ❓
@@ -74,7 +73,7 @@
 
 -----
 
-### 프로그래머스
+### [프로그래머스](https://programmers.co.kr)
 
 * [두 개 뽑아서 더하기](https://programmers.co.kr/learn/courses/30/lessons/68644)
 * [크레인 인형뽑기 게임](https://programmers.co.kr/learn/courses/30/lessons/64061)
@@ -83,7 +82,8 @@
 * [추석 트래픽](https://programmers.co.kr/learn/courses/30/lessons/17676)
 * [구명보트](https://programmers.co.kr/learn/courses/30/lessons/42885)
 * [압축](https://programmers.co.kr/learn/courses/30/lessons/17684) ❓
-* 
+
+  
 
 
 
