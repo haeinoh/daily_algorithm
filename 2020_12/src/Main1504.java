@@ -12,7 +12,7 @@ public class Main1504 {
 			this.v = v;
 			this.d = d;
 		}
-
+		
 		@Override
 		public int compareTo(Pair o) {
 			return d - o.d;
