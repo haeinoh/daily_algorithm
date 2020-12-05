@@ -30,7 +30,7 @@
 
 * [구간 합 구하기](https://www.acmicpc.net/problem/2042) ❓
 
-* [상근이의 여행](https://www.acmicpc.net/problem/9372) ❓
+* [상근이의 여행](https://www.acmicpc.net/problem/9372)
 
   
 
