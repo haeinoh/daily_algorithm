@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Main1504 {
-	public static int N, E, v1, v2, dist[], arr[][];
+	public static int N, E, v1, v2, dist[], arr[][], answer;
 	public static int INF = 987654321;
 	public static boolean vtd[];
 	public static class Pair implements Comparable<Pair>{
@@ -19,6 +19,10 @@ public class Main1504 {
 		}
 	}
 	
+	public static void solve(int start, int end) {
+		
+	}
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		N = sc.nextInt();
@@ -27,6 +31,7 @@ public class Main1504 {
 		arr = new int[N][N];
 		vtd = new boolean[N];
 		dist = new int[N];
+		answer = 0;
 		
 		for(int i = 0; i < N; i++) dist[i] = INF;
 		
@@ -40,6 +45,13 @@ public class Main1504 {
 		v1 = sc.nextInt();
 		v2 = sc.nextInt();
 		
+		solve(1, v1);
+		solve(v1, v2);
+		solve(v2, N);
+		
+
+		if(answer < 0) System.out.println("-1");
+		else System.out.println(answer);
 		
 	}
 }
