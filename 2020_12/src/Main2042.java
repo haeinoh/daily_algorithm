@@ -2,11 +2,12 @@
 import java.util.Scanner;
 
 public class Main2042 {
-	public static int N, M, K, arr[], tree[];
+	public static int N, M, K, arr[];
+	public static long tree[];
 	
 	public static long init(int node, int start, int end) {
 		if(start == end) return tree[node] = arr[start];
-		else return tree[node] = init(node*2, start, (start+end)/2 + init(node*2+1, (start+end)/2+1, end));
+		else return tree[node] = init(node*2, start, (start+end)/2) + init(node*2+1, (start+end)/2+1, end);
 		
 	}
 	
@@ -17,9 +18,9 @@ public class Main2042 {
 		K = sc.nextInt();
 		
 		arr = new int[N];
-		tree = new int[4*N]; // range
+		tree = new long[4*N]; // range
 		
-		
+		init(0, 0, 0);
 		
 	}
 }
