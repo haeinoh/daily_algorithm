@@ -1,85 +1,72 @@
 //https://www.acmicpc.net/problem/1525
-import java.util.Arrays;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
 public class Main1525 {
-    public static int arr[][], ans[][], answer;
-    public static boolean flag;
-    public static Queue<int[]> q;
-    public static int dx[] = {-1, 0, 1, 0};
-    public static int dy[] = {0, -1, 0, 1};
-
-    public static void init() {
-        int num = 1;
-        loop:for(int i = 0; i < 3; i++){
-            for(int j = 0; j < 3; j++){
-                if(i == 2 && j == 2) break loop;
-                ans[i][j] = num;
-                num++;
-            }
-        }
+	public static int answer;
+	public static boolean flag;
+	public static String base;
+	public static HashSet<String> set;
+	public static Queue<String> q;
+    public static int dx[] = {-1, 1, -3 ,3};
+    
+    public static String swap(String sb, int cur, int next) {
+    	StringBuilder tmp = new StringBuilder(sb);
+    	char c = tmp.charAt(cur);
+    	char n = tmp.charAt(next);
+    	
+    	tmp.setCharAt(cur, n);
+    	tmp.setCharAt(next, c);
+    	
+    	return tmp.toString();
     }
-
-    public static boolean check() {
-        for(int i = 0; i < 3; i++)
-            for(int j = 0; j < 3; j++)
-                if(arr[i][j] != ans[i][j]) return false;
-
-        return true;
-    }
-
+    
     public static void solve() {
-        int time = 0;
-        loop:while(!q.isEmpty()) {
-            int size = q.size();
-            while(size > 0) {
-                int tmp[] = q.poll();
-                int x = tmp[0];
-                int y = tmp[1];
-
-                for(int i = 0; i < 4; i++) {
-                    int nx = x + dx[i];
-                    int ny = y + dy[i];
-                    if(nx < 0 || ny < 0 || nx >= 3 || ny >=3 ) continue;
-
-                    if(arr[nx][ny] == ans[x][y]) {
-                        q.add(new int[]{nx, ny});
-                        arr[x][y] = arr[nx][ny];
-                        arr[nx][ny] = 0;
-                    }
-                }
-                size--;
-            }
-            time++;
-            if(check()) {
-                flag = true;
-                answer = time;
-                break loop;
-            }
-            if(time > 8) {
-                break loop;
-            }
-        }
+    	loop:while(!q.isEmpty()) {
+    		int size = q.size(); 
+    		lop:while(size > 0) {
+    			String str = q.poll();
+    			int x = str.indexOf("0");
+    			if(str.equals("123456780")) {
+    				flag = true;
+    				break lop;
+    			}
+    			for(int i = 0;i < dx.length; i++) {
+    				int nx = x + dx[i];
+    				
+    				if(nx < 0 || nx >= 9 || (i == 1 && (x+1)%3 == 0 ) || (i == 0 && x % 3 == 0)) continue;
+    				else {
+    					String next = swap(str, x, nx);
+    					if(!set.contains(next)) {
+    						set.add(next);
+    						q.add(next);
+    					}
+    				}
+    			}
+    			size--;
+    		}
+    		if(flag) break loop;
+    		answer++;
+    	}
     }
-
+    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        arr = new int[3][3];
-        ans = new int[3][3];
-        answer = 0;
         q = new LinkedList<>();
         flag = false;
-        for(int i = 0; i < 3; i++) {
-            for(int j = 0; j < 3; j++) {
-                arr[i][j] = sc.nextInt();
-                if(arr[i][j] == 0) {
-                    q.add(new int[]{i,j});
-                }
-            }
+        answer = 0;
+        base = "";
+        for(int i = 0 ; i <3; i++) {
+        	for(int j = 0; j < 3; j++) {
+        		int x= sc.nextInt();
+        		base += x;
+        	}
         }
-        init();
+        set = new HashSet<>();
+        q.add(base);
+        set.add(base);
         solve();
         if(flag) System.out.println(answer);
         else System.out.println("-1");
