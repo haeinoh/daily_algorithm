@@ -6,8 +6,8 @@ public class Solution17684 {
 	public static List<String> list;
 	public static List<Integer> ans;
 	public static void main(String[] args) {
-		String msg = "TOBEORNOTTOBEORTOBEORNOT";
-		int[] answer = {};
+		String msg = "TOBEORNOTTOBEORTOBEORNOT"; //TEST¿ë
+		int[] answer = {}; 
 		
 		list = new ArrayList<>();
 		ans = new ArrayList<>();
@@ -48,6 +48,6 @@ public class Solution17684 {
 		answer = new int[ans.size()]; 
 		for(int i = 0; i < ans.size(); i++) answer[i] = ans.get(i);
 
-		System.out.println(Arrays.toString(answer));
+		System.out.println(Arrays.toString(answer)); //TEST¿ë
 	}
 }
