@@ -8,7 +8,7 @@
 
 ⚠️ 시간이 지나서 해결한 문제
 
-✅ 푸는데 어려웠던 문제
+✅ 다시 풀어볼 문제
 
 --------------------------------------------------------------------------------------------------------------------------------
 
@@ -24,11 +24,11 @@
 
 * [트리의 부모 찾기](https://www.acmicpc.net/problem/11725)
 
-* [도로네트워크](https://www.acmicpc.net/problem/3176) ❓
+* [도로네트워크](https://www.acmicpc.net/problem/3176) ✅  
 
 * [트리의 지름](https://www.acmicpc.net/problem/1167)
 
-* [구간 합 구하기](https://www.acmicpc.net/problem/2042) ❓
+* [구간 합 구하기](https://www.acmicpc.net/problem/2042) ✅ 
 
 * [상근이의 여행](https://www.acmicpc.net/problem/9372)
 
@@ -36,7 +36,7 @@
 
 #### BFS/DFS
 
-* [퍼즐](https://www.acmicpc.net/problem/1525) ❓
+* [퍼즐](https://www.acmicpc.net/problem/1525) ⚠️
 * [바이러스](https://www.acmicpc.net/problem/2606)
 * [전쟁-전투](https://www.acmicpc.net/problem/1303)
 * [촌수계산](https://www.acmicpc.net/problem/2644)
@@ -79,7 +79,6 @@
 * [크레인 인형뽑기 게임](https://programmers.co.kr/learn/courses/30/lessons/64061)
 * [스킬트리](https://programmers.co.kr/learn/courses/30/lessons/49993)
 * [N으로 표현 ](https://programmers.co.kr/learn/courses/30/lessons/42895)❓
-* [추석 트래픽](https://programmers.co.kr/learn/courses/30/lessons/17676)
+* [추석 트래픽](https://programmers.co.kr/learn/courses/30/lessons/17676)❓
 * [구명보트](https://programmers.co.kr/learn/courses/30/lessons/42885)
-* [압축](https://programmers.co.kr/learn/courses/30/lessons/17684) ❓
-  
+* [압축](https://programmers.co.kr/learn/courses/30/lessons/17684) 
