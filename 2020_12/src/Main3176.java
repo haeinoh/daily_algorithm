@@ -7,7 +7,10 @@ import java.util.StringTokenizer;
 class Pair {
 	int y;
 	int num;
-	
+	public Pair(int y, int num) {
+		this.y = y;
+		this.num = num;
+	}
 }
 
 public class Main3176 {

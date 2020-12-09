@@ -3,15 +3,15 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Main14501 {
-	public static int N, time[], price[], dp[], answer;
+	public static int N, time[], price[], dp[];
 	
-	public static void solve() {
+	public static int solve(int day) {
 		
-		for(int i = N-1; i >= 0 ;i--) {
-			
-			
-		}
- 		
+		if(day >= N) return 0;
+		
+		if(dp[day] > 0) return dp[day];
+		
+		return dp[day] = Math.max(solve(day+1), solve(day+time[day])+price[day]);
 	}
 	
 	public static void main(String[] args) {
@@ -20,7 +20,6 @@ public class Main14501 {
 		time = new int[N];
 		price = new int[N];
 		dp = new int[N];
-		answer = 0;
 		
 		for(int i = 0; i < N; i++) {
 			int x = sc.nextInt();
@@ -28,7 +27,6 @@ public class Main14501 {
 			time[i] = x;
 			price[i] = y;
 		}
-		solve();
-		System.out.println(answer);
+		System.out.println(solve(0));
 	}
 }
