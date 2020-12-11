@@ -1,13 +1,11 @@
-//https://www.acmicpc.net/problem/3176
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 import java.util.StringTokenizer;
 
 
-public class Main3176 {
+public class Main3176_2 {
 	private static class Pair {
 		int y;
 		int num;
@@ -17,7 +15,7 @@ public class Main3176 {
 		}
 	}
 	public static int N, K, depth[], dp[][], maxDp[][], minDp[][], maxAns, minAns;
-	public static HashMap<Integer, ArrayList<Pair>> list;
+	public static List<List<Pair>> list;
 	public static boolean vtd[];
 	
 	public static void dfs(int cur, int parent) {
@@ -91,18 +89,18 @@ public class Main3176 {
 		minDp = new int[N+1][21];
 		vtd = new boolean[N+1];
 		
-		list = new HashMap<>();
+		list = new ArrayList<>();
 		
-//		for(int i = 1; i <= N; i++) list.put(i, new ArrayList<Pair>());
+//		for(int i = 0; i <= N; i++) list.add(new ArrayList<>());		
 		
 		for(int i = 1; i < N; i++) {
 			st = new StringTokenizer(bf.readLine());
 			int a = Integer.parseInt(st.nextToken());
 			int b = Integer.parseInt(st.nextToken());
 			int c = Integer.parseInt(st.nextToken());
-			if(!list.containsKey(a)) list.put(a, new ArrayList<Pair>());
+			if(!list.contains(a)) list.add(new ArrayList<>());
 			list.get(a).add(new Pair(b, c));
-			if(!list.containsKey(b)) list.put(b, new ArrayList<Pair>());
+			if(!list.contains(b)) list.add(new ArrayList<>());
 			list.get(b).add(new Pair(a, c));
 		}
 		

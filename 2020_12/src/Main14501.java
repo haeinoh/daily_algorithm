@@ -6,8 +6,9 @@ public class Main14501 {
 	public static int N, time[], price[], dp[];
 	
 	public static int solve(int day) {
-		
-		if(day >= N) return 0;
+		if(day == N) return 0;
+		//날짜가 N보다 크면 -INF
+		if(day > N) return -987654321;
 		
 		if(dp[day] > 0) return dp[day];
 		
