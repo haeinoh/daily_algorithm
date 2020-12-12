@@ -6,7 +6,7 @@
 
 ❓ 해결 못한 문제
 
-⚠️ 시간이 지나서 해결한 문제
+⚠️ 풀었지만 헷갈린 문제
 
 ✅ 다시 풀어볼 문제
 
@@ -68,8 +68,8 @@
 * [2xn 타일링](https://www.acmicpc.net/problem/11726)
 * [가장 긴 감소하는 부분 수열](https://www.acmicpc.net/problem/11722)
 * [오르막 수](https://www.acmicpc.net/problem/11057)
-* [가장 큰 정사각형](https://www.acmicpc.net/problem/1915) ❓
-* [퇴사](https://www.acmicpc.net/problem/14501) ❓
+* [가장 큰 정사각형](https://www.acmicpc.net/problem/1915) ✅
+* [퇴사](https://www.acmicpc.net/problem/14501) ⚠️
 
 -----
 
@@ -83,4 +83,4 @@
 * [구명보트](https://programmers.co.kr/learn/courses/30/lessons/42885)
 * [압축](https://programmers.co.kr/learn/courses/30/lessons/17684) 
 * [줄 서는 방법](https://programmers.co.kr/learn/courses/30/lessons/12936?language=java)
-* [4단 고음](https://programmers.co.kr/learn/courses/30/lessons/1831)
+* [4단 고음](https://programmers.co.kr/learn/courses/30/lessons/1831)❓
