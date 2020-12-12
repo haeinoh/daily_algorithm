@@ -82,3 +82,5 @@
 * [추석 트래픽](https://programmers.co.kr/learn/courses/30/lessons/17676)❓
 * [구명보트](https://programmers.co.kr/learn/courses/30/lessons/42885)
 * [압축](https://programmers.co.kr/learn/courses/30/lessons/17684) 
+* [줄 서는 방법](https://programmers.co.kr/learn/courses/30/lessons/12936?language=java)
+* [4단 고음](https://programmers.co.kr/learn/courses/30/lessons/1831)

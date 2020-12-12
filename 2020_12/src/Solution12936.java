@@ -29,9 +29,9 @@ public class Solution12936 {
 		long start = k-1; //k가 한 블럭의 마지막일 경우 다른 블럭으로 잡힘 
 		for(int i = 1; i < n; i++) {
 			int idx = (int) (start / fact[n-i]); 
-				answer[i-1] = list.get(idx);
-				list.remove(idx);
-				start %= (fact[n-i]);
+			answer[i-1] = list.get(idx);
+			list.remove(idx);
+			start %= (fact[n-i]);
 		}
 		
 		answer[n-1] = list.get(0);
