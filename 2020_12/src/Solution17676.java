@@ -27,13 +27,9 @@ public class Solution17676 {
 		for(int i = 0; i < lines.length; i++) {
 			int count = 0;
 			start = store[i][1];
-			next =  Double.parseDouble(String.format("%.3f", (start + 1))); //0.999->1
+			next =  Double.parseDouble(String.format("%.3f", (start + 0.999))); //0.999->1
 			for(int j = 0; j < lines.length; j++) {
-				if(store[j][0] >= start && next > store[j][0]) // start보다는 크거나 같고 next보다는 작게
-					count++;
-				 else if(store[j][1] >= start && next > store[j][1]) 
-					count++;
-				 else if(store[j][0] <= start && next <= store[j][1]) // start와 next값 모두 포함 
+				if(store[j][1] >= start && next >= store[j][0]) // start보다는 크거나 같고 next보다는 작게
 					count++;
 			}
 			if(answer < count) answer = count;
