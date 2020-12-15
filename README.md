@@ -32,6 +32,10 @@
 
 * [상근이의 여행](https://www.acmicpc.net/problem/9372)
 
+* [구간 합 구하기2](https://www.acmicpc.net/problem/10999)
+
+* [정점들의 거리](https://www.acmicpc.net/problem/1761)
+
   
 
 #### BFS/DFS
@@ -44,6 +48,8 @@
 * [4연산](https://www.acmicpc.net/problem/14395)
 * [특정한 최단 경로](https://www.acmicpc.net/problem/1504) ❓
 * [텀 프로젝트](https://www.acmicpc.net/problem/9466) 
+* [인구이동](https://www.acmicpc.net/problem/16234)
+* [맥주 마시면서 걸어가기](https://www.acmicpc.net/problem/9205)
 
 
 
@@ -57,6 +63,8 @@
 * [톱니바퀴2](https://www.acmicpc.net/problem/15662)
 * [소수&팰린드롬](https://www.acmicpc.net/problem/1747)
 * [프린터 큐](https://www.acmicpc.net/problem/1966)
+* [친구](https://www.acmicpc.net/problem/1058)
+* [수영장 만들기](https://www.acmicpc.net/problem/1113)
 
 
 
@@ -70,6 +78,8 @@
 * [오르막 수](https://www.acmicpc.net/problem/11057)
 * [가장 큰 정사각형](https://www.acmicpc.net/problem/1915) ✅
 * [퇴사](https://www.acmicpc.net/problem/14501) ⚠️
+* [외판원 순회](https://www.acmicpc.net/problem/2098)
+* [알약](https://www.acmicpc.net/problem/4811)
 
 -----
 
@@ -84,3 +94,5 @@
 * [압축](https://programmers.co.kr/learn/courses/30/lessons/17684) 
 * [줄 서는 방법](https://programmers.co.kr/learn/courses/30/lessons/12936?language=java)
 * [4단 고음](https://programmers.co.kr/learn/courses/30/lessons/1831)❓
+* [풍선 터트리기](https://programmers.co.kr/learn/courses/30/lessons/68646)
+* [셔틀버스](https://programmers.co.kr/learn/courses/30/lessons/17678)
