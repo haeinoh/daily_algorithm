@@ -1,23 +1,24 @@
 //https://www.acmicpc.net/problem/1113
-import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
 
 public class Main1113 {
 	public static int N, M, answer, maxHeight, arr[][];
+	public static boolean check;
 	public static Queue<int[]> q;
-	public static int vtd[][];
+	public static boolean vtd[][];
 	public static int dx[] = {-1, 0, 1, 0};
 	public static int dy[] = {0, -1, 0, 1};
 		
 	public static void init() {
 		for(int i = 0; i < N; i++) 
 			for(int j = 0; j < M; j++)
-				vtd[i][j] = 0;
+				vtd[i][j] = false;
 	}
 	
-	public static void solve(int value, int ee) {
+	public static int solve(int value) {
+		int size = 1;
 		while(!q.isEmpty()) {
 			int tmp[] = q.poll();
 			int x = tmp[0];
@@ -27,13 +28,19 @@ public class Main1113 {
 				int nx = x + dx[i];
 				int ny = y + dy[i];
 				
-				if(nx < 0 || ny < 0 || nx > N-1 || ny > M-1) continue;
-				else if(vtd[nx][ny] == 0 && arr[nx][ny] < value){
-					vtd[nx][ny] = ee;
+				if(nx < 0 || ny < 0 || nx > N-1 || ny > M-1) {
+					check = true; //하나라도 가장자리에 닿게 되면 물을 부을 수가 없다.
+					continue;
+				}
+				else if(!vtd[nx][ny] && arr[nx][ny] < value){
+					vtd[nx][ny] = true;
 					q.add(new int[] {nx,ny});
+					size++;
 				}
 			}
 		}
+		if(check) size = 0; //만들수가 없기때문에 초기화
+		return size;
 	}
 
 	public static void main(String[] args) {
@@ -44,7 +51,7 @@ public class Main1113 {
 		answer = 0;
 		maxHeight = -987654321;
 		arr = new int[N][M];
-		vtd = new int[N][M];
+		vtd = new boolean[N][M];
 		q = new LinkedList<>();
 		
 		for(int i = 0; i < N; i++) {
@@ -57,30 +64,16 @@ public class Main1113 {
 
 		for(int p = 2; p <= maxHeight; p++) {
 			init();
-			int tmp = 1;
 			for(int i = 1; i < N-1; i++) {
 				for(int j = 1; j < M-1; j++) {
-					if(arr[i][j] < p && vtd[i][j] == 0) { //p의 높이보다 낮은 높이이면서 방문한 적이 없는 칸
-						vtd[i][j] = tmp;
+					check = false;
+					if(arr[i][j] < p && !vtd[i][j]) { //p의 높이보다 낮은 높이이면서 방문한 적이 없는 칸
+						vtd[i][j] = true;
 						q.add(new int[] {i, j});
-						solve(p, tmp);
-						tmp++;
+						answer += solve(p);
 					}
 				}
 			}
-			for(int i = 1; i < N-1; i++) {
-				for(int j = 1; j < M-1; j++) {
-					if(vtd[i][j] != 0) {
-						System.out.println(i + " " + j);
-						answer++;
-					}
-				}
-			}
-			for(int i[]: arr)
-				System.out.println(Arrays.toString(i));
-			System.out.println("answer : " + answer);
-			System.out.println();
-			
 		}
 		
 		System.out.println(answer);
