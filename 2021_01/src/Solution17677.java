@@ -9,8 +9,6 @@ public class Solution17677 {
 		return result;
 	}
 	public static int solution(String str1, String str2) {
-		int answer = 0;
-
 		str1 = str1.toLowerCase(); // lowercase·Î ¸ÂÃã
 		str2 = str2.toLowerCase();
 		
