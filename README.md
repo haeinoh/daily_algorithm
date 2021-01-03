@@ -98,8 +98,8 @@
 * [4단 고음](https://programmers.co.kr/learn/courses/30/lessons/1831)❓
 * [풍선 터트리기](https://programmers.co.kr/learn/courses/30/lessons/68646)
 * [셔틀버스](https://programmers.co.kr/learn/courses/30/lessons/17678)
-* [보석 쇼핑](https://programmers.co.kr/learn/courses/30/lessons/67258)
-* [뉴스 클러스터링](https://programmers.co.kr/learn/courses/30/lessons/17677?language=java)
+* [보석 쇼핑](https://programmers.co.kr/learn/courses/30/lessons/67258)❓
+* [뉴스 클러스터링](https://programmers.co.kr/learn/courses/30/lessons/17677?language=java) 
 
 
 
@@ -107,9 +107,8 @@
 
 ### [LeetCode](https://leetcode.com/)
 
-- [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
+* [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
+* [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 
-- [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 
-  
 
