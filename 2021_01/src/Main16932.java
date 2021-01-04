@@ -1,16 +1,19 @@
 //https://www.acmicpc.net/problem/16932
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.Set;
 import java.util.StringTokenizer;
 
 public class Main16932 {
 	public static int N, M, arr[][], check[][], save[], answer, length;
-	public static boolean vtd[];
+//	public static boolean vtd[];
 	public static int dx[] = {-1, 0, 1, 0};
 	public static int dy[] = {0, -1, 0, 1};
 	public static Queue<int[]> q;
+	public static HashSet<Integer> set;
 	
 	public static void make(int num) {
 		while(!q.isEmpty()) {
@@ -41,8 +44,9 @@ public class Main16932 {
 			
 			if(nx < 0 || ny < 0 || nx >= N || ny >= M) continue;
 			
-			if(check[nx][ny] > 0 && !vtd[check[nx][ny]]) {
-				vtd[check[nx][ny]] = true;
+			if(check[nx][ny] > 0 && !set.contains(check[nx][ny])/*!vtd[check[nx][ny]]*/) {
+//				vtd[check[nx][ny]] = true;
+				set.add(check[nx][ny]);
 				count += save[check[nx][ny]];
 			}
 		}
@@ -50,9 +54,9 @@ public class Main16932 {
 		if(answer < count) answer = count;
 	}
 	
-	public static void init() {
-		for(int i = 1; i <= length; i++) vtd[i] = false;
-	}
+//	public static void init() {
+//		for(int i = 1; i <= length; i++) vtd[i] = false;
+//	}
 	
 	public static void main(String[] args) throws Exception {
 		BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
@@ -86,12 +90,14 @@ public class Main16932 {
 				}
 			} 
 		}
-		vtd = new boolean[length+1];
+//		vtd = new boolean[length+1];
+		set = new HashSet<>();
 		
 		for(int i = 0; i < N; i++) {
 			for(int j = 0; j < M; j++) {
 				if(arr[i][j] == 0) {
-					init();
+//					init();
+					set.clear();
 					solve(i, j);
 				}
 			}
