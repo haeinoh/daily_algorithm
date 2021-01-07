@@ -8,8 +8,9 @@ public class Main12865 {
 	public static void solve() {
 		for(int i = 1; i <= N; i++) { // index
 			for(int w = 0; w <= K; w++) { // weight
-				if(w-arr[i][0] < 0) dp[i][w] = dp[i-1][w]; // 그 전꺼 그대로 
+				if(w-arr[i][0] < 0) dp[i][w] = dp[i-1][w]; // 배낭에 물건을 채울 수 없는경우, 그 전까지의 최대값 가져온다.
 				else dp[i][w] = Math.max(dp[i-1][w], dp[i-1][w-arr[i][0]] + arr[i][1]);
+				// 이번 물건을 채우지 않는 경우 , 이번 물건을 넣어가는 경우(그 전까지 + 해당 차례 가치_
 			}
 		}
 	}
