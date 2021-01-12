@@ -81,27 +81,54 @@
 * [퇴사](https://www.acmicpc.net/problem/14501) ⚠️
 * [외판원 순회](https://www.acmicpc.net/problem/2098)
 * [알약](https://www.acmicpc.net/problem/4811) ✅
-* [포도주 시식](https://www.acmicpc.net/problem/2156)
+* [포도주 시식](https://www.acmicpc.net/problem/2156)✅
+* [쉬운 계단 수](https://www.acmicpc.net/problem/10844)
+
+
+
+#### 기타
+
+* [평범한 배낭](https://www.acmicpc.net/problem/12865)
+
+  
 
 -----
 
 ### [프로그래머스](https://programmers.co.kr)
 
 * [두 개 뽑아서 더하기](https://programmers.co.kr/learn/courses/30/lessons/68644)
+
 * [크레인 인형뽑기 게임](https://programmers.co.kr/learn/courses/30/lessons/64061)
+
 * [스킬트리](https://programmers.co.kr/learn/courses/30/lessons/49993)
+
 * [N으로 표현 ](https://programmers.co.kr/learn/courses/30/lessons/42895)❓
+
 * [추석 트래픽](https://programmers.co.kr/learn/courses/30/lessons/17676)
+
 * [구명보트](https://programmers.co.kr/learn/courses/30/lessons/42885)
+
 * [압축](https://programmers.co.kr/learn/courses/30/lessons/17684) 
+
 * [줄 서는 방법](https://programmers.co.kr/learn/courses/30/lessons/12936?language=java)
+
 * [4단 고음](https://programmers.co.kr/learn/courses/30/lessons/1831)❓
+
 * [풍선 터트리기](https://programmers.co.kr/learn/courses/30/lessons/68646)
+
 * [셔틀버스](https://programmers.co.kr/learn/courses/30/lessons/17678)
-* [보석 쇼핑](https://programmers.co.kr/learn/courses/30/lessons/67258)❓
+
+* [보석 쇼핑](https://programmers.co.kr/learn/courses/30/lessons/67258)✅
+
 * [뉴스 클러스터링](https://programmers.co.kr/learn/courses/30/lessons/17677?language=java) 
 
+* [프렌즈 4 블록](https://programmers.co.kr/learn/courses/30/lessons/17679)
 
+* [캐시](https://programmers.co.kr/learn/courses/30/lessons/17680)
+
+* [무지의 먹방라이브](https://programmers.co.kr/learn/courses/30/lessons/42891)✅
+
+  
 
 -----------
 
@@ -109,6 +136,9 @@
 
 * [Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
 * [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+* [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)❓
+* [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
+* 
 
 
 
