@@ -90,6 +90,10 @@
 
 * [평범한 배낭](https://www.acmicpc.net/problem/12865)
 
+* [줄 세우기](https://www.acmicpc.net/problem/2252)
+
+* [랜선 자르기](https://www.acmicpc.net/problem/1654)
+
   
 
 -----
@@ -138,7 +142,8 @@
 * [Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 * [Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/)❓
 * [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
-* 
+* [Substring With Concatenation  Of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)
+* [Unique Paths ii](https://leetcode.com/problems/unique-paths-ii/)
 
 
 
