@@ -10,29 +10,12 @@ public class SolutionWithConcatenationOfAllWords {
 			list.add(words[i]);
 
 		int start = 0;
-		int end = 0;
-
 		HashMap<String, Integer> map = new HashMap<>();
 
-		while (start <= end) {
-			if(words.length > map.size()) {
-				
-			}
+		while (start + words[0].length() < words.length) {
 			
-			if (map.size() < words.length) {
-				if(list.contains(s.substring(end, end + 3))) {
-					if ((end + 3 < s.length())) {
-						map.put(s.substring(end, end + 3), map.get(s.substring(end, end + 3)) + 1);
-						end += 3;
-					}
-				} 
-			}
 			
-
-			if (words.length == map.size()) { // map에 담긴 크기가 같다면
-				
-				
-			}
+			
 		}
 
 		return answer;
