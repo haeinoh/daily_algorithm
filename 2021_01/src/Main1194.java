@@ -57,7 +57,7 @@ public class Main1194 {
 						} else if (arr[nx][ny] >= 'a' && arr[nx][ny] <= 'f') {
 							int tmpKey = key | 1 << (arr[nx][ny] - 'a'); // ¿­¼è º¸°ü
 							q.add(new Dal(nx, ny, tmpKey));
-							vtd[nx][ny][key] = true;
+							vtd[nx][ny][tmpKey] = true;
 						} 
 					} 
 				}
