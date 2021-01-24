@@ -19,8 +19,8 @@ public class Solution60063 {
 	public static int bo[][], answer, N;
 	public static boolean vtd[][][][];
 	public static Queue<Dot> q;
-	public static int dx[] = {0, 1};
-	public static int dy[] = {1, 0};
+	public static int dx[] = {0, 0, 1, -1};
+	public static int dy[] = {1, -1, 0, 0};
 	
 	public static void solve() {
 		loop:while(!q.isEmpty()) {
@@ -35,7 +35,7 @@ public class Solution60063 {
 					break loop;
 				}
 				
-				for(int i = 0; i < 2; i++) {
+				for(int i = 0; i < 4; i++) {
 					int nx1 = x1 + dx[i];
 					int ny1 = y1 + dy[i];
 					int nx2 = x2 + dx[i];
@@ -43,13 +43,93 @@ public class Solution60063 {
 					
 					if(nx1 < 0 || ny1 < 0 || nx2 < 0 || ny2 < 0 || nx1 >= N 
 							|| ny1 >= N || nx2 >= N || ny2 >= N || bo[nx1][ny1] == 1 || bo[nx2][ny2] == 1) continue;
-					else if(!vtd[nx1][ny1][nx2][ny2]){
+					else /*if(!vtd[nx1][ny1][nx2][ny2])*/{
 						q.add(new Dot(nx1, ny1, nx2, ny2));
 						vtd[nx1][ny1][nx2][ny2] = true;
 					}
 				}
 				
-				//90도 회전 - 오른쪽 축 기준 (일직선)
+				if(y1 == y2) { //게오 
+					if(x1 < x2) { // x1이 위에 있을 떄 
+						for(int i = 0; i < 2; i++) {
+							int nx1 = x1 + dx[i];
+							int ny1 = y1 + dy[i];
+							int nx2 = x2 + dx[i];
+							int ny2 = y2 + dy[i];
+							
+							if(nx1 < 0 || ny1 < 0 || nx2 < 0 || ny2 < 0 || nx1 >= N 
+									|| ny1 >= N || nx2 >= N || ny2 >= N || bo[nx1][ny1] == 1 || bo[nx2][ny2] == 1) continue;
+							
+							if(i == 0) {
+								q.add(new Dot(nx1+1, ny1+1, nx2, ny2));
+								q.add(new Dot(nx1, ny1, nx2-1, ny2+1));
+							} else {
+								q.add(new Dot(nx1+1, ny1-1, nx2, ny2));
+								q.add(new Dot(nx1, ny1, nx2-1, ny2-1));
+							}
+						}
+					} else {
+						for(int i = 0; i < 2; i++) {
+							int nx1 = x1 + dx[i];
+							int ny1 = y1 + dy[i];
+							int nx2 = x2 + dx[i];
+							int ny2 = y2 + dy[i];
+							
+							if(nx1 < 0 || ny1 < 0 || nx2 < 0 || ny2 < 0 || nx1 >= N 
+									|| ny1 >= N || nx2 >= N || ny2 >= N || bo[nx1][ny1] == 1 || bo[nx2][ny2] == 1) continue;
+							
+							if(i == 0) {
+								q.add(new Dot(nx1, ny1, nx2+1, ny2+1));
+								q.add(new Dot(nx1-1, ny1+1, nx2, ny2));
+							} else {
+								q.add(new Dot(nx1, ny1, nx2+1, ny2-1));
+								q.add(new Dot(nx1-1, ny1-1, nx2, ny2));
+							}
+						}
+						
+					}
+				} else { // 가로
+				if(y1 < y2) { // y1이 더 왼쪽에 있을 때  
+					for(int i = 2; i < 4; i++) {
+						int nx1 = x1 + dx[i];
+						int ny1 = y1 + dy[i];
+						int nx2 = x2 + dx[i];
+						int ny2 = y2 + dy[i];
+						
+						if(nx1 < 0 || ny1 < 0 || nx2 < 0 || ny2 < 0 || nx1 >= N 
+								|| ny1 >= N || nx2 >= N || ny2 >= N || bo[nx1][ny1] == 1 || bo[nx2][ny2] == 1) continue;
+						
+						if(i == 2) {
+							q.add(new Dot(nx1, ny1, nx2+1, ny2-1));
+							q.add(new Dot(nx1+1, ny1+1, nx2, ny2));
+						} else {
+							q.add(new Dot(nx1, ny1, nx2-1, ny2-1));
+							q.add(new Dot(nx1-1, ny1+1, nx2, ny2));
+						}
+					}
+				} else {
+					for(int i = 0; i < 2; i++) {
+						int nx1 = x1 + dx[i];
+						int ny1 = y1 + dy[i];
+						int nx2 = x2 + dx[i];
+						int ny2 = y2 + dy[i];
+						
+						if(nx1 < 0 || ny1 < 0 || nx2 < 0 || ny2 < 0 || nx1 >= N 
+								|| ny1 >= N || nx2 >= N || ny2 >= N || bo[nx1][ny1] == 1 || bo[nx2][ny2] == 1) continue;
+						
+						if(i == 2) {
+							q.add(new Dot(nx1+1, ny1-1, nx2, ny2));
+							q.add(new Dot(nx1, ny1, nx2+1, ny2+1));
+						} else {
+							q.add(new Dot(nx1-1, ny1-1, nx2, ny2));
+							q.add(new Dot(nx1, ny1, nx2-1, ny2+1));
+						}
+					}
+					
+				}
+			}
+				
+			/*	//90도 회전 - 오른쪽 축 기준 (일직선)
 				if(y1 < y2 && x1 == x2 && x1+1 < N && y1+1 < N && bo[x1+1][y1] == 0 && bo[x1+1][y1+1] == 0) {
 					q.add(new Dot(x1+1, y1+1, x2, y2));
 					vtd[x1+1][y1+1][x2][y2] = true;
@@ -74,7 +154,7 @@ public class Solution60063 {
 				} else if(x1 < x2 && y1 == y2 && y1+1 < N && x1+1 < N && bo[x1][y1+1] == 0 && bo[x1+1][y1+1] == 0) {
 					q.add(new Dot(x1+1, y1+1, x2, y2));
 					vtd[x1+1][y1+1][x2][y2] = true;
-				}
+				}*/
 				size--;
 			}
 			answer++;
