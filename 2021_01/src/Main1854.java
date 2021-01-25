@@ -23,7 +23,7 @@ public class Main1854 {
 	
 		@Override
 		public int compareTo(Doro doro) {
-			return this.time - doro.time;
+			return doro.time = this.time;
 		}
 	}
 	
@@ -73,7 +73,7 @@ public class Main1854 {
 			arr[a][b] = c;
 		}
 		dist = new PriorityQueue[N+1]; // ??? 어떻게 정렬해여??
-		for(int i = 1; i <= N; i++) dist[i] = new PriorityQueue<>(i);
+		for(int i = 1; i <= N; i++) dist[i] = new PriorityQueue<>();
 		pq = new PriorityQueue<>();
 
 		solve();
