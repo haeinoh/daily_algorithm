@@ -43,13 +43,13 @@ public class Solution60063 {
 					
 					if(nx1 < 0 || ny1 < 0 || nx2 < 0 || ny2 < 0 || nx1 >= N 
 							|| ny1 >= N || nx2 >= N || ny2 >= N || bo[nx1][ny1] == 1 || bo[nx2][ny2] == 1) continue;
-					else /*if(!vtd[nx1][ny1][nx2][ny2])*/{
+					else if(!vtd[nx1][ny1][nx2][ny2]){
 						q.add(new Dot(nx1, ny1, nx2, ny2));
 						vtd[nx1][ny1][nx2][ny2] = true;
 					}
 				}
 				
-				if(y1 == y2) { //게오 
+				if(y1 == y2) { //세로
 					if(x1 < x2) { // x1이 위에 있을 떄 
 						for(int i = 0; i < 2; i++) {
 							int nx1 = x1 + dx[i];
@@ -61,11 +61,23 @@ public class Solution60063 {
 									|| ny1 >= N || nx2 >= N || ny2 >= N || bo[nx1][ny1] == 1 || bo[nx2][ny2] == 1) continue;
 							
 							if(i == 0) {
-								q.add(new Dot(nx1+1, ny1+1, nx2, ny2));
-								q.add(new Dot(nx1, ny1, nx2-1, ny2+1));
+								if(!vtd[x1+1][y1+1][x2][y2]) {
+									q.add(new Dot(x1+1, y1+1, x2, y2));
+									vtd[x1+1][y1+1][x2][y2] = true;
+								}
+								if(!vtd[x1][y1][x2-1][y2+1]) {
+									q.add(new Dot(x1, y1, x2-1, y2+1));
+									vtd[x1][y1][x2-1][y2+1] = true;
+								}
 							} else {
-								q.add(new Dot(nx1+1, ny1-1, nx2, ny2));
-								q.add(new Dot(nx1, ny1, nx2-1, ny2-1));
+								if(!vtd[x1+1][y1-1][x2][y2]) {
+									q.add(new Dot(x1+1, y1-1, x2, y2));
+									vtd[x1+1][y1-1][x2][y2] = true;
+								}
+								if(!vtd[x1][y1][x2-1][y2-1]) {
+									q.add(new Dot(x1, y1, x2-1, y2-1));
+									vtd[x1][y1][x2-1][y2-1] = true;
+								}
 							}
 						}
 					} else {
@@ -79,11 +91,23 @@ public class Solution60063 {
 									|| ny1 >= N || nx2 >= N || ny2 >= N || bo[nx1][ny1] == 1 || bo[nx2][ny2] == 1) continue;
 							
 							if(i == 0) {
-								q.add(new Dot(nx1, ny1, nx2+1, ny2+1));
-								q.add(new Dot(nx1-1, ny1+1, nx2, ny2));
+								if(!vtd[x1][y1][x2+1][y2+1]) {
+									q.add(new Dot(x1, y1, x2+1, y2+1));
+									vtd[x1][y1][x2+1][y2+1] = true;
+								}
+								if(!vtd[x1-1][y1+1][x2][y2]) {
+									q.add(new Dot(x1-1, y1+1, x2, y2));
+									vtd[x1-1][y1+1][x2][y2] = true;
+								}
 							} else {
-								q.add(new Dot(nx1, ny1, nx2+1, ny2-1));
-								q.add(new Dot(nx1-1, ny1-1, nx2, ny2));
+								if(!vtd[x1][y1][x2+1][y2-1]) {
+									q.add(new Dot(x1, y1, x2+1, y2-1));
+									vtd[x1][y1][x2+1][y2-1] = true;
+								}
+								if(!vtd[x1-1][y1-1][x2][y2]) {
+									q.add(new Dot(x1-1, y1-1, x2, y2));
+									vtd[x1-1][y1-1][x2][y2] = true;
+								}
 							}
 						}
 						
@@ -100,11 +124,24 @@ public class Solution60063 {
 								|| ny1 >= N || nx2 >= N || ny2 >= N || bo[nx1][ny1] == 1 || bo[nx2][ny2] == 1) continue;
 						
 						if(i == 2) {
-							q.add(new Dot(nx1, ny1, nx2+1, ny2-1));
-							q.add(new Dot(nx1+1, ny1+1, nx2, ny2));
+							if(!vtd[x1][y1][x2+1][y2-1]) {
+								q.add(new Dot(x1, y1, x2+1, y2-1));
+								vtd[x1][y1][x2+1][y2-1] = true;
+							}
+							if(!vtd[x1+1][y1+1][x2][y2]) {
+								q.add(new Dot(x1+1, y1+1, x2, y2));
+								vtd[x1+1][y1+1][x2][y2] = true;
+							}
 						} else {
-							q.add(new Dot(nx1, ny1, nx2-1, ny2-1));
-							q.add(new Dot(nx1-1, ny1+1, nx2, ny2));
+							if(!vtd[x1][y1][x2-1][y2-1]) {
+								q.add(new Dot(x1, y1, x2-1, y2-1));
+								vtd[x1][y1][x2-1][y2-1] = true;
+							}
+
+							if(!vtd[x1-1][y1+1][x2][y2]) {
+								q.add(new Dot(x1-1, y1+1, x2, y2));
+								vtd[x1-1][y1+1][x2][y2] = true;
+							}
 						}
 					}
 				} else {
@@ -118,43 +155,30 @@ public class Solution60063 {
 								|| ny1 >= N || nx2 >= N || ny2 >= N || bo[nx1][ny1] == 1 || bo[nx2][ny2] == 1) continue;
 						
 						if(i == 2) {
-							q.add(new Dot(nx1+1, ny1-1, nx2, ny2));
-							q.add(new Dot(nx1, ny1, nx2+1, ny2+1));
+							if(!vtd[x1+1][y1-1][x2][y2]) {
+								q.add(new Dot(x1+1, y1-1, x2, y2));
+								vtd[x1+1][y1-1][x2][y2] = true;
+							}
+							if(!vtd[x1][y1][x2+1][y2+1]) {
+								q.add(new Dot(x1, y1, x2+1, y2+1));
+								vtd[x1][y1][x2+1][y2+1] = true;
+							}
 						} else {
-							q.add(new Dot(nx1-1, ny1-1, nx2, ny2));
-							q.add(new Dot(nx1, ny1, nx2-1, ny2+1));
+//							if(!vtd[x1-1][y1-1][x2][y2]) {
+//								q.add(new Dot(x1-1, y1-1, x2, y2));
+//								vtd[x1-1][y1-1][x2][y2] = true;
+//							}
+//							
+//							if(!vtd[x1][y1][x2-1][y2+1]) {
+//								q.add(new Dot(x1, y1, x2-1, y2+1));
+//								vtd[x1][y1][x2-1][y2+1] = true;
+//							}
 						}
 					}
 					
 				}
 			}
 				
-			/*	//90도 회전 - 오른쪽 축 기준 (일직선)
-				if(y1 < y2 && x1 == x2 && x1+1 < N && y1+1 < N && bo[x1+1][y1] == 0 && bo[x1+1][y1+1] == 0) {
-					q.add(new Dot(x1+1, y1+1, x2, y2));
-					vtd[x1+1][y1+1][x2][y2] = true;
-				} else if(y2 < y1  && x1 == x2 && x2+1 < N && y2+1 < N && bo[x2+1][y2] == 0 && bo[x2+1][y2+1] == 0) {
-					q.add(new Dot(x1, y1, x2+1, y2+1));
-					vtd[x1+1][y1+1][x2][y2] = true;
-				}
-
-				// 90도 회전 - 왼쪽 축 기준
-				if(y1 < y2 && x1 == x2 && x2+1 < N && y2-1 >= 0 && bo[x2+1][y2] == 0 && bo[x2+1][y2-1] == 0) {
-					q.add(new Dot(x1, y1, x2+1, y2-1));
-					vtd[x1][y1][x2+1][y2-1] = true;
-				} else if (y2 < y1  && x1 == x2 && x1+1 < N && y1-1 >= 0 && bo[x1+1][y1] == 0 && bo[x1+1][y1-1] == 0) {
-					q.add(new Dot(x1+1, y1-1, x2, y2));
-					vtd[x1+1][y1-1][x2][y2] = true;
-				}
-				
-				// 90도 회전 - 세로 일 때 (오른쪽으로)
-				if(x1 > x2 && y1 == y2 && y2+1 < N && x2+1 < N && bo[x2][y2+1] == 0 && bo[x2+1][y2+1] == 0) {
-					q.add(new Dot(x1, y1, x2+1, y2+1));
-					vtd[x1][y1][x2+1][y2+1] = true;
-				} else if(x1 < x2 && y1 == y2 && y1+1 < N && x1+1 < N && bo[x1][y1+1] == 0 && bo[x1+1][y1+1] == 0) {
-					q.add(new Dot(x1+1, y1+1, x2, y2));
-					vtd[x1+1][y1+1][x2][y2] = true;
-				}*/
 				size--;
 			}
 			answer++;
