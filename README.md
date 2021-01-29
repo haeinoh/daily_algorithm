@@ -51,6 +51,7 @@
 * [인구이동](https://www.acmicpc.net/problem/16234)
 * [맥주 마시면서 걸어가기](https://www.acmicpc.net/problem/9205) 
 * [모양 만들기](https://www.acmicpc.net/problem/16932)
+* [달이 차오른다, 가자.](https://www.acmicpc.net/problem/1194)
 
 
 
@@ -83,6 +84,8 @@
 * [알약](https://www.acmicpc.net/problem/4811) ✅
 * [포도주 시식](https://www.acmicpc.net/problem/2156)✅
 * [쉬운 계단 수](https://www.acmicpc.net/problem/10844)
+* [내려가기](https://www.acmicpc.net/problem/2096)
+* [다리 놓기](https://www.acmicpc.net/problem/1010)
 
 
 
@@ -93,6 +96,12 @@
 * [줄 세우기](https://www.acmicpc.net/problem/2252)
 
 * [랜선 자르기](https://www.acmicpc.net/problem/1654)
+
+* [k번째 최단경로 찾기](https://www.acmicpc.net/problem/1854)❓
+
+* [문제집](https://www.acmicpc.net/problem/1766)
+
+* [파티](https://www.acmicpc.net/problem/1238)❓
 
   
 
@@ -131,6 +140,18 @@
 * [캐시](https://programmers.co.kr/learn/courses/30/lessons/17680)
 
 * [무지의 먹방라이브](https://programmers.co.kr/learn/courses/30/lessons/42891)✅
+
+* [신규 아이디 추천](https://programmers.co.kr/learn/courses/30/lessons/72410)
+
+* [괄호 변환](https://programmers.co.kr/learn/courses/30/lessons/60058)
+
+* [합승 택시 요금](https://programmers.co.kr/learn/courses/30/lessons/72413)❓
+
+* [기둥과 보 설치❓](https://programmers.co.kr/learn/courses/30/lessons/60061)
+
+* [광고 삽입❓](https://programmers.co.kr/learn/courses/30/lessons/72414)
+
+* [외벽 점검](https://programmers.co.kr/learn/courses/30/lessons/60062)❓
 
   
 
