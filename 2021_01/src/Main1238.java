@@ -1,7 +1,7 @@
+//https://www.acmicpc.net/problem/1238
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
@@ -55,8 +55,8 @@ public class Main1238 {
 		list = new ArrayList<>();
 		rlist = new ArrayList<>();
 		
-		dist = new int[N+1]; // 집에서 파티를 참석하러 가는 경우
-		rdist = new int[N+1]; // 파티에서 돌아오는 경우 (역방향) 모든 노드에서 X로 가는 것은 비효율적
+		dist = new int[N+1]; // 파티에서 돌아오는 경우
+        rdist = new int[N+1]; // 집에서 파티를 참석하러 가는 경우 
 		
 		// 초기화 
 		for(int i = 0; i <= N; i++) {
