@@ -50,13 +50,16 @@ public class Solution60063 {
 					}
 				}
 				
-				if(x1 == x2) { //°¡·Î
+				if(x1 == x2) { //ï¿½ï¿½ï¿½ï¿½
 					for(int i = 0; i < 2; i++) {
 						if(x1+rot[i] >= N || x2+rot[i] >= N || x1+rot[i] < 0 || x2+rot[i] < 0 || bo[x1+rot[i]][y1] == 1 || bo[x2+rot[i]][y2] == 1) continue;
-						else if(!vtd[x1][y1][x2+1][y2+rot[i]]) q.add(new Dot(x1, y1, x2+1, y2+rot[i]));
+						else if(!vtd[x1][y1][x2+1][y2+rot[i]]) {
+							q.add(new Dot(x1, y1, x2+1, y2+rot[i]));
+
+						}
 						else if(!vtd[x1+1][y1+rot[i]][x2][y2]) q.add(new Dot(x1+1, y1+rot[i], x2, y2));
 					}
-				} else { // °¡·Î
+				} else { // ï¿½ï¿½ï¿½ï¿½
 					for(int i = 0; i < 2; i++) {
 						if(y1+rot[i] >= N || y2+rot[i] >= N || y1+rot[i] < 0 || y2+rot[i] < 0 || bo[x1][y1+rot[i]] == 1 || bo[x2][y2+rot[i]] == 1) continue;
 						else if(!vtd[x1+rot[i]][y1+1][x2][y2]) q.add(new Dot(x1+rot[i], y1+1, x2, y2));
