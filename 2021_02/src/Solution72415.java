@@ -64,7 +64,7 @@ public class Solution72415 {
         		boolean flag = tmp.flag;
         		if(done(arr)) break loop;
         	
-        		// 4 °¡Áö ¹æÇâÀ¸·Î ´Ü¼ø ÀÌµ¿
+        		// 4 ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ü¼ï¿½ ï¿½Ìµï¿½
         		for(int i = 0; i < 4; i++) {
         			int nx = x + dx[i];
         			int ny = y + dy[i];
