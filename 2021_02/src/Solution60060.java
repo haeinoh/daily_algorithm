@@ -1,19 +1,9 @@
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
-/*class newTrieNode { // ÀÚ½Ä ³ëµå ¸Ê, ÇöÀç ³ëµå°¡ ¸¶Áö¸· ±ÛÀÚÀÎÁö ¿©ºÎ
 
-	
-	
-}
-
-class newTrie { // ºó ¹®ÀÚ¿­À» °¡Áö´Â ·çÆ® ³ëµå 
-
-	
-}
-*/
 public class Solution60060 {
-	static class TrieNode {
+    static class TrieNode {
         TrieNode next[];
         boolean isLast;
         int count;
@@ -57,21 +47,21 @@ public class Solution60060 {
         }
 
     }
-	public static int[] solution(String[] words, String[] queries) {
-		 int answer[] = new int[queries.length];
-	        Trie t = new Trie();
-	        for(int i = 0; i < words.length; i++) {
-	            t.insert(words[i]);
-	        }
-	        // insert¸¦ µÎ ¹ø ÇØ¾ßÇÏ³ª....??
-	        for(int i = 0; i < queries.length; i++) {
-	            if(queries[i].charAt(0) == '?') { // ¾Õ
-	                if(t.contains(queries[i], false)) answer[i]++;
-	            } else {
-	                if(t.contains(queries[i], true)) answer[i]++;
-	            }
-	        }
-	        return answer;
+    public static int[] solution(String[] words, String[] queries) {
+        int answer[] = new int[queries.length];
+        Trie t = new Trie();
+        for(int i = 0; i < words.length; i++) {
+            t.insert(words[i]);
+        }
+        // insertë¥¼ ë‘ ë²ˆ í•´ì•¼í•˜ë‚˜....??
+        for(int i = 0; i < queries.length; i++) {
+            if(queries[i].charAt(0) == '?') { // ì•
+                if(t.contains(queries[i], false)) answer[i]++;
+            } else {
+                if(t.contains(queries[i], true)) answer[i]++;
+            }
+        }
+        return answer;
 	}
 	public static void main(String[] args) {
 		String w[] = {"frodo", "front", "frost", "frozen", "frame", "kakao"};
