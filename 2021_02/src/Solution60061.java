@@ -33,7 +33,7 @@ public class Solution60061 {
 	}
 
 	public static boolean solveBo(int x, int y) { // 기둥 위 / 기둥 바로 위 / 기둥 끝쪽으로 / 양쪽 끝이 서로 다른 보 일 때
-		return (isGidung(x, y-1) || isGidung(x,y) || isGidung(x+1, y-1) || (isBo(x-1, y) && isBo(x+1, y)));
+		return (isGidung(x, y-1) || /*isGidung(x,y) || */isGidung(x+1, y-1) || (isBo(x-1, y) && isBo(x+1, y)));
 	}
 
 	public static int[][] solution(int n, int[][] build_frame) {
@@ -89,15 +89,6 @@ public class Solution60061 {
 			answer[i][1] = list.get(i).y;
 			answer[i][2] = list.get(i).str;
 		}
-
-		Arrays.sort(answer, new Comparator<int[]>() {
-			@Override
-			public int compare(int[] o1, int[] o2) {
-				if(o1[0] == o2[0] && o1[1] != o2[1]) return o1[1] - o2[1];
-				else if(o1[0] == o2[0] && o1[1] == o2[1]) return o1[2] - o2[2];
-				return o1[0] - o2[0];
-			}
-		});
 		return answer;
 
     }
