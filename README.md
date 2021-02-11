@@ -67,6 +67,8 @@
 * [프린터 큐](https://www.acmicpc.net/problem/1966)
 * [친구](https://www.acmicpc.net/problem/1058)
 * [수영장 만들기](https://www.acmicpc.net/problem/1113)
+* [돌 던지기](https://www.acmicpc.net/problem/3025)❓
+* [모노미노도미노](https://www.acmicpc.net/problem/19235)
 
 
 
@@ -101,7 +103,15 @@
 
 * [문제집](https://www.acmicpc.net/problem/1766)
 
-* [파티](https://www.acmicpc.net/problem/1238)❓
+* [파티](https://www.acmicpc.net/problem/1238)✅
+
+* [문자열 집합](https://www.acmicpc.net/problem/14425)
+
+* [음주 코딩](https://www.acmicpc.net/problem/5676)
+
+* [놀이공원](https://www.acmicpc.net/problem/1561)
+
+* [가르침](https://www.acmicpc.net/problem/1062)
 
   
 
@@ -145,13 +155,29 @@
 
 * [괄호 변환](https://programmers.co.kr/learn/courses/30/lessons/60058)
 
-* [합승 택시 요금](https://programmers.co.kr/learn/courses/30/lessons/72413)❓
+* [합승 택시 요금](https://programmers.co.kr/learn/courses/30/lessons/72413)
 
-* [기둥과 보 설치❓](https://programmers.co.kr/learn/courses/30/lessons/60061)
+* [기둥과 보 설치✅](https://programmers.co.kr/learn/courses/30/lessons/60061)
 
 * [광고 삽입❓](https://programmers.co.kr/learn/courses/30/lessons/72414)
 
-* [외벽 점검](https://programmers.co.kr/learn/courses/30/lessons/60062)❓
+* [외벽 점검](https://programmers.co.kr/learn/courses/30/lessons/60062)
+
+* [카드 짝 맞추기](https://programmers.co.kr/learn/courses/30/lessons/72415)❓
+
+* [순위 검색](https://programmers.co.kr/learn/courses/30/lessons/72412)❓
+
+* [메뉴 리뉴얼](https://programmers.co.kr/learn/courses/30/lessons/72411)
+
+* [파일명 정렬](https://programmers.co.kr/learn/courses/30/lessons/17686)
+
+* [방금그곡](https://programmers.co.kr/learn/courses/30/lessons/17683)
+
+* [n진수 게임](https://programmers.co.kr/learn/courses/30/lessons/17687)
+
+* [실패율](https://programmers.co.kr/learn/courses/30/lessons/42889)
+
+* [다트 게임](https://programmers.co.kr/learn/courses/30/lessons/17682)
 
   
 
