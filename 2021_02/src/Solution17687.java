@@ -6,8 +6,7 @@ public class Solution17687 {
     public static String nu[] = {"A", "B", "C", "D", "E", "F"};
     public static void make(int jinbub, int done) {
         list.add("0");
-        loop:
-        for (int i = 1; i < done; i++) {
+        loop:for (int i = 1; i < done; i++) {
             int num = i;
             String tmp = "";
             while (num > 0) {
