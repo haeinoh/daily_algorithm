@@ -32,7 +32,7 @@ public class Solution60061 {
 		return (y == 0 || isGidung(x, y-1) || isBo(x, y) || isBo(x-1, y));
 	}
 
-	public static boolean solveBo(int x, int y) { // 기둥 위 / 기둥 바로 위 / 기둥 끝쪽으로 / 양쪽 끝이 서로 다른 보 일 때
+	public static boolean solveBo(int x, int y) { // 기둥 위 / 기둥 바로 위 (x) / 기둥 끝쪽으로 / 양쪽 끝이 서로 다른 보 일 때
 		return (isGidung(x, y-1) || /*isGidung(x,y) || */isGidung(x+1, y-1) || (isBo(x-1, y) && isBo(x+1, y)));
 	}
 
