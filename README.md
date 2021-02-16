@@ -41,7 +41,7 @@
 #### BFS/DFS
 
 * [퍼즐](https://www.acmicpc.net/problem/1525) ⚠️
-* [바이러스](https://www.acmicpc.net/problem/2606)
+* [바이러스](https://www.acmicpc.net/problem/2606) 
 * [전쟁-전투](https://www.acmicpc.net/problem/1303)
 * [촌수계산](https://www.acmicpc.net/problem/2644)
 * [숨바꼭질3](https://www.acmicpc.net/problem/13549)
@@ -68,7 +68,8 @@
 * [친구](https://www.acmicpc.net/problem/1058)
 * [수영장 만들기](https://www.acmicpc.net/problem/1113)
 * [돌 던지기](https://www.acmicpc.net/problem/3025)❓
-* [모노미노도미노](https://www.acmicpc.net/problem/19235)
+* [모노미노도미노](https://www.acmicpc.net/problem/19235)❓
+* [청소년 상어](https://www.acmicpc.net/problem/19236)
 
 
 
@@ -112,6 +113,8 @@
 * [놀이공원](https://www.acmicpc.net/problem/1561)
 
 * [가르침](https://www.acmicpc.net/problem/1062)
+
+* [로봇탐색](https://www.acmicpc.net/problem/3649)
 
   
 
@@ -178,6 +181,12 @@
 * [실패율](https://programmers.co.kr/learn/courses/30/lessons/42889)
 
 * [다트 게임](https://programmers.co.kr/learn/courses/30/lessons/17682)
+
+* [카드 짝 맞추기](https://programmers.co.kr/learn/courses/30/lessons/72415)
+
+* [매출 하락 최소화](https://programmers.co.kr/learn/courses/30/lessons/72416)
+
+* [자동완성](https://programmers.co.kr/learn/courses/30/lessons/17685)
 
   
 
