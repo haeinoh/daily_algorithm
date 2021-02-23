@@ -1,5 +1,6 @@
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
@@ -94,83 +95,72 @@ public class Main19235 {
         }
     }
 
-    public static void check() {
-        //blue
+    public static void dropBlue() {
         int blueCount = 0;
-        while (true) {
-            boolean flag = false;
-            for (int i = 5; i >= 0; i--) {
-                int count = 0;
-                for (int j = 0; j < 4; j++) {
-                    if (blue[j][i] != 0) count++;
-                }
-                if (count == 4) {
-                    flag = true;
-                    blueCount++;
-                    for (int j = 0; j < 4; j++) {
-                        blue[j][i] = 0;
-                    }
+        // erase
+        for(int i = 2; i < 6; i++) {
+            int count = 0;
+            for(int j = 0; j < 4; j++) {
+                if(blue[j][i] != 0) count++;
+            }
+            if(count == 4) {
+                blueCount++;
+                for(int j = 0; j < 4; j++) {
+                    blue[j][i] = 0;
                 }
             }
-            if (!flag) break;
-            for (int i = 0; i < 4; i++) {
-                for(int j = 4; j >= 0; j--) {
-                    if(blue[i][j] == 1) { // 그대로 down
+        }
+        if(blueCount > 0) {
+            for(int j = 4; j >= 0; j--) {
+                for(int i = 0; i < 4; i++) {
+                    if(blue[i][j] == 1) {
                         int idx = 0;
-                        for(int k = j; k < 6; k++) {
+                        for(int k = j+1; k < 6; k++) {
                             if(blue[i][k] == 0) {
                                 idx = k;
-                            }
+                            } else break;
                         }
                         blue[i][j] = 0;
                         blue[i][idx] = 1;
                     } else if(blue[i][j] == 2) {
                         if(j-1 >= 0 && blue[i][j-1] == 2) {
                             int idx = 0;
-                            for(int k = j; k < 6; k++) {
+                            for(int k = j+1; k < 6; k++) {
                                 if(blue[i][k] == 0) {
                                     idx = k;
-                                }
+                                } else break;
                             }
                             blue[i][j] = 0;
                             blue[i][j-1] = 0;
                             blue[i][idx] = 2;
                             blue[i][idx-1] = 2;
-                        } else { //짝꿍 블럭이 없는 경우
+                        } else {
                             int idx = 0;
-                            for(int k = j; k < 6; k++) {
+                            for(int k = j+1; k < 6; k++) {
                                 if(blue[i][k] == 0) {
                                     idx = k;
-                                }
+                                } else break;
                             }
                             blue[i][j] = 0;
                             blue[i][idx] = 1;
                         }
                     } else if(blue[i][j] == 3) {
-                        if(i+1 <= 5 && blue[i+1][j] == 3) {
-                            int idx = 0;
-                            for(int k = j; k < 6; k++) {
-                                if(blue[i][k] == 0) {
+                        int idx = 0;
+                        if(i+1 < 4 && blue[i+1][j] == 3) {
+                            for(int k = j+1; k < 6; k++) {
+                                if(blue[i][k] == 0 && blue[i+1][k] == 0) {
                                     idx = k;
-                                }
+                                } else break;
                             }
-                            int idx2 = 0;
-                            for(int k = j; k < 6; k++) {
-                                if(blue[i+1][k] == 0) {
-                                    idx2 = k;
-                                }
-                            }
-                            if(idx2 < idx) idx = idx2;
                             blue[i][j] = 0;
                             blue[i+1][j] = 0;
-                            blue[i][idx] = 3;
-                            blue[i+1][idx] = 3;
-                        } else { //짝꿍 블럭이 없는 경우
-                            int idx = 0;
-                            for(int k = j; k < 6; k++) {
+                            blue[i][idx-1] = 3;
+                            blue[i+1][idx-1] = 3;
+                        } else if(idx == 0){
+                            for(int k = j+1; k < 6; k++) {
                                 if(blue[i][k] == 0) {
                                     idx = k;
-                                }
+                                } else break;
                             }
                             blue[i][j] = 0;
                             blue[i][idx] = 1;
@@ -179,95 +169,89 @@ public class Main19235 {
                 }
             }
         }
-        //green
+        answer += blueCount;
+    }
+
+    public static void dropGreen() {
         int greenCount = 0;
-        while (true) {
-            boolean flag = false;
-            for (int i = 5; i >= 0; i--) {
-                int count = 0;
-                for (int j = 0; j < 4; j++) {
-                    if (green[i][j] != 0) count++;
-                }
-                if (count == 4) {
-                    flag = true;
-                    greenCount++;
-                    for (int j = 0; j < 4; j++) {
-                        green[i][j] = 0;
-                    }
+        for(int i = 0; i < 6; i++) {
+            int count = 0;
+            for(int j = 0; j <4; j++) {
+                if(green[i][j] != 0) count++;
+            }
+            if(count == 4) {
+                greenCount++;
+                for(int j = 0; j < 4; j++) {
+                    green[i][j] = 0;
                 }
             }
-            if (!flag) break;
-            for (int i = 0; i < 4; i++) {
-                for(int j = 4; j >= 0; j--) {
-                    if(green[j][i] == 1) { // 그대로 down
+        }
+
+        if(greenCount > 0) {
+            for(int j = 0; j < 4; j++) {
+                for(int i = 5; i >= 0; i--) {
+                    if(green[i][j] == 1) {
                         int idx = 0;
-                        for(int k = j; k < 6; k++) {
-                            if(green[k][i] == 0) {
+                        for(int k = i+1; k < 6; k++) {
+                            if(green[k][j] == 1) {
                                 idx = k;
-                            }
+                            } else break;
                         }
-                        green[j][i] = 0;
-                        green[idx][i] = 1;
-                    } else if(green[j][i] == 2) {
-                        if(i+1 <= 5 && green[j][i+1] == 2) {
+                        green[i][j] = 0;
+                        green[idx][j] = 1;
+                    }
+                    else if(green[i][j] == 2) {
+                        if(j+1 < 4 && green[i][j+1] == 2) {
                             int idx = 0;
-                            for(int k = j; k < 6; k++) {
-                                if(green[k][i] == 0) {
+                            for(int k = i+1; k < 6; k++) {
+                                if(green[k][j] == 0 && green[k][j+1] == 0) {
                                     idx = k;
-                                }
+                                } else break;
                             }
-                            int idx2 = 0;
-                            for(int k = j; k < 6; k++) {
-                                if(green[k][i+1] == 0) {
-                                    idx2 = k;
-                                }
-                            }
-                            if(idx2 < idx) idx = idx2;
-                            green[j][i] = 0;
-                            green[j][i+1] = 0;
-                            green[idx][i] = 2;
-                            green[idx][i+1] = 2;
-                        } else { //짝꿍 블럭이 없는 경우
+                            green[i][j] = 0;
+                            green[i][j+1] = 0;
+                            green[idx][j] = 2;
+                            green[idx][j+1] = 2;
+                        } else {
                             int idx = 0;
-                            for(int k = j; k < 6; k++) {
-                                if(green[k][i] == 0) {
+                            for(int k = i+1; k < 6; k++) {
+                                if(green[k][j] == 1) {
                                     idx = k;
-                                }
+                                } else break;
                             }
-                            green[j][i] = 0;
-                            green[idx][i] = 1;
+                            green[i][j] = 0;
+                            green[idx][j] = 1;
                         }
-                    } else if(green[j][i] == 3) {
-                        if(j-1 >= 0 && green[j-1][i] == 3) {
+                    } else if(green[i][j] == 3) {
+                        if(i-1 >= 0 && green[i-1][j] == 3) {
                             int idx = 0;
-                            for(int k = j; k < 6; k++) {
-                                if(green[k][i] == 0) {
+                            for(int k = i+1; k < 6; k++) {
+                                if(green[k][j] == 0) {
                                     idx = k;
-                                }
+                                } else break;
                             }
-                            green[j][i] = 0;
-                            green[j-1][i] = 0;
-                            green[idx][i] = 3;
-                            green[j-1][i] = 3;
-                        } else { //짝꿍 블럭이 없는 경우
+                            green[i][j] = 0;
+                            green[i-1][j] = 0;
+                            green[idx][j] = 3;
+                            green[idx-1][j] = 3;
+                        } else {
                             int idx = 0;
-                            for(int k = j; k < 6; k++) {
-                                if(green[k][i] == 0) {
+                            for(int k = i+1; k < 6; k++) {
+                                if(green[k][j] == 1) {
                                     idx = k;
-                                }
+                                } else break;
                             }
-                            green[j][i] = 0;
-                            green[idx][i] = 1;
+                            green[i][j] = 0;
+                            green[idx][j] = 1;
                         }
                     }
                 }
             }
         }
-        answer += (greenCount + blueCount);
+        answer += greenCount;
     }
 
-    public static void yunhancan() {
-        //blue
+    public static void moveBlue() {
         int count = 0;
         for (int i = 0; i < 2; i++) {
             boolean flag = false;
@@ -294,10 +278,11 @@ public class Main19235 {
                     }
                 }
             }
-
         }
-        //green
-        count = 0;
+    }
+
+    public static void moveGreen() {
+        int count = 0;
         for (int i = 0; i < 2; i++) {
             boolean flag = false;
             for (int j = 0; j < 4; j++) {
@@ -367,8 +352,10 @@ public class Main19235 {
                     three(x, y);
                     break;
             }
-            check();
-            yunhancan();
+            dropBlue();
+            dropGreen();
+            moveBlue();
+            moveGreen();
 //            System.out.println("-------- " + t+ " " + x + " " + y);
 //            for(int p[]: blue) System.out.println(Arrays.toString(p));
 //            System.out.println();
