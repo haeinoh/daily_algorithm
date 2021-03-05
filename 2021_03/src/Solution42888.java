@@ -1,3 +1,4 @@
+//https://programmers.co.kr/learn/courses/30/lessons/42888
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
@@ -8,30 +9,27 @@ public class Solution42888 {
         String[][] arr = new String[record.length][2];
         int idx = 0;
 
-        for(int i = 0; i < record.length; i++) {
-            String[] tmp = record[i].split(" ");
+        for (String s : record) {
+            String[] tmp = s.split(" ");
             String order = tmp[0];
             String id = tmp[1];
             String nm = "";
-            if(!order.equals("Leave")) nm = tmp[2];
+            if (!order.equals("Leave")) nm = tmp[2];
 
-            if(!order.equals("Change")) {
+            if (!order.equals("Change")) {
                 arr[idx][0] = id;
                 arr[idx][1] = order;
                 idx++;
             }
-            if(!order.equals("Leave")) {
-                if(name.get(id) != null) name.put(id, nm);
-                else name.put(id, nm);
+            if (!order.equals("Leave")) {
+                name.put(id, nm);
             }
         }
         String[] answer = new String[idx];
         for(int i = 0; i < idx; i++) {
-
             if(arr[i][1].equals("Enter")) answer[i] = name.get(arr[i][0]) + "님이 들어왔습니다.";
             else answer[i] = name.get(arr[i][0]) + "님이 나갔습니다.";
         }
-
         return answer;
     }
     public static void main(String[] args) {
