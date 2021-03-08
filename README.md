@@ -116,6 +116,12 @@
 
 * [로봇탐색](https://www.acmicpc.net/problem/3649)
 
+* [달빛 여우](https://www.acmicpc.net/problem/16118)
+
+* [음악프로그램](https://www.acmicpc.net/problem/2623)
+
+* [공유기 설치](https://www.acmicpc.net/problem/2110)
+
   
 
 -----
@@ -188,6 +194,14 @@
 
 * [자동완성](https://programmers.co.kr/learn/courses/30/lessons/17685)
 
+* [후보키](https://programmers.co.kr/learn/courses/30/lessons/42890)
+
+* [징검다리 건너기](https://programmers.co.kr/learn/courses/30/lessons/64062)
+
+* [경주로 건설](https://programmers.co.kr/learn/courses/30/lessons/67259)
+
+  
+  
   
 
 -----------
