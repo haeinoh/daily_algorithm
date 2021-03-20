@@ -200,8 +200,14 @@
 
 * [경주로 건설](https://programmers.co.kr/learn/courses/30/lessons/67259)
 
-  
-  
+* [문자열 압축](https://programmers.co.kr/learn/courses/30/lessons/60057)
+
+* [오픈채팅방](https://programmers.co.kr/learn/courses/30/lessons/42888)
+
+* [튜플](https://programmers.co.kr/learn/courses/30/lessons/64065)
+
+* [수식 최대화](https://programmers.co.kr/learn/courses/30/lessons/67257)
+
   
 
 -----------
