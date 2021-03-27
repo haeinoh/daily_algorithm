@@ -208,6 +208,10 @@
 
 * [수식 최대화](https://programmers.co.kr/learn/courses/30/lessons/67257)
 
+* [매칭 점수](https://programmers.co.kr/learn/courses/30/lessons/42893)
+
+* [가사 검색](https://programmers.co.kr/learn/courses/30/lessons/60060)
+
   
 
 -----------
