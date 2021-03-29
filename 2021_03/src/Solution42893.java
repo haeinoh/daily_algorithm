@@ -3,7 +3,7 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Solution3 {
+public class Solution42893 {
     static class Link {
         int index;
         int base;

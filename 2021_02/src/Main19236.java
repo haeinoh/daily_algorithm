@@ -4,8 +4,8 @@ import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Main19236 {
-    public static int dx[] = {-1, -1, 0, 1, 1, 1, 0, -1};
-    public static int dy[] = {0, -1, -1, -1, 0, 1, 1, 1};
+    public static int[] dx = {-1, -1, 0, 1, 1, 1, 0, -1};
+    public static int[] dy = {0, -1, -1, -1, 0, 1, 1, 1};
     public static int answer;
 
     public static class Fish {
@@ -27,6 +27,7 @@ public class Main19236 {
             Fish[] fish = new Fish[17];
             for(int i = 0; i < 17; i++) {
                 fish[i] = new Fish();
+                if(tmpFish[i].eat == -1) continue;
                 fish[i].x = tmpFish[i].x;
                 fish[i].y = tmpFish[i].y;
                 fish[i].dir = tmpFish[i].dir;
@@ -35,6 +36,7 @@ public class Main19236 {
 
             //switch fish position
             for(int ts = 1; ts <= 16; ts++) {
+                
                 if(fish[ts].eat != -1) { //죽은 물고기가 아닌 경우
                     int x = fish[ts].x;
                     int y = fish[ts].y;
@@ -45,15 +47,21 @@ public class Main19236 {
                         int nx = x + dx[dir];
                         int ny = y + dy[dir];
 
-                        if(nx >= 0 && ny >=  0 && nx < 4 && ny < 4 && arr[nx][ny] != -1 && fish[arr[nx][ny]].x != -1 && fish[arr[nx][ny]].y != -1) {
-                            int num = arr[nx][ny];
-                            fish[ts].x = fish[num].x;
-                            fish[ts].y = fish[num].y;
-                            arr[fish[ts].x][fish[ts].y] = ts;
+                        if(nx >= 0 && ny >=  0 && nx < 4 && ny < 4 && arr[nx][ny] >= 0) {
+                            if(arr[nx][ny] == 0) {
+                                arr[fish[ts].x][fish[ts].y] = 0;
+                                fish[ts].x = nx;
+                                fish[ts].y = ny;
+                            } else {
+                                int num = arr[nx][ny];
+                                fish[num].x = fish[ts].x;
+                                fish[num].y = fish[ts].y;
+                                arr[fish[ts].x][fish[ts].y] = num;
 
-                            fish[num].x = x;
-                            fish[num].y = y;
-                            arr[x][y] = num;
+                                fish[ts].x = nx;
+                                fish[ts].y = ny;
+                            }
+                            arr[nx][ny] = ts;
                             break;
                         }
                         dir++;
@@ -67,13 +75,13 @@ public class Main19236 {
             int ny = fish[0].y + dy[fish[0].dir]*i;
             // 상어가 갈 다음 칸이 경계값을 넘어가면 break
             if(nx < 0 || ny < 0 || nx >= 4 || ny >= 4) break;
-            // 상어가 갈 다음 칸이 빈칸이면 그냥 넘어가고
-            if(fish[arr[nx][ny]].eat == -1) continue;
+            // 상어가 갈 다음 칸이 빈칸이거나, 죽은 물고기면 패쓰?
+            if(arr[nx][ny] == 0) continue;
             // 먹을 수 있는 물고기가 있다면, 물고기의 번호만큼 먹고 물고기의 방향값 까지 갖는다.
             int deadNum = arr[nx][ny];
             arr[fish[0].x][fish[0].y] = 0;
-            fish[0].x = fish[deadNum].x;
-            fish[0].y = fish[deadNum].y;
+            fish[0].x = nx;
+            fish[0].y = ny;
             fish[0].dir = fish[deadNum].dir;
             fish[0].eat += deadNum;
             // arr의 값은 -1이 된다.
@@ -94,8 +102,8 @@ public class Main19236 {
             arr[nx][ny] = deadNum;
             //상어는 다시 -1이된다.
             arr[tmpFish[0].x][tmpFish[0].y] = -1;
-            }
-            answer = Math.max(answer, fish[0].eat);
+        }
+        answer = Math.max(answer, fish[0].eat);
 //        for(int p[]: arr) System.out.println(Arrays.toString(p));
        /* for(int i = 0; i < 4; i++){
             for(int j = 0; j < 4; j++){
