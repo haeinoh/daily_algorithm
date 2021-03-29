@@ -3,6 +3,7 @@
 .recommenders
 .settings
 bin/
+.class
 .classpath
 .project
 *.iml
