@@ -9,6 +9,9 @@ bin/
 *.iml
 *.log
 
+## ignore folder
+out/
+
 # : comments
 
 # no .a files
