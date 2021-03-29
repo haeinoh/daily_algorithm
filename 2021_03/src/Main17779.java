@@ -13,7 +13,7 @@ public class Main17779 {
     public static void counting() {
         for(int i = 1; i <= N; i++) {
             for(int j = 1; j <= N; j++) {
-                count[arr[i][j]] += map[i][j];
+                count[arr[i][j]] += map[i][j]; // 각 구역별로 counting
             }
         }
         Arrays.sort(count);
@@ -22,7 +22,7 @@ public class Main17779 {
             if(count[i] == 0) break;
             else num = i;
         }
-        answer = Math.min(answer, (count[N] - count[num]));
+        answer = Math.min(answer, (count[N] - count[num])); // 계
         for(int i = 0; i <= N; i++) {
             count[i] = 0;
         }
@@ -38,7 +38,7 @@ public class Main17779 {
         arr[1][N] = -1;
         arr[N][1] = -1;
         arr[N][N] = -1;
-        while(!q.isEmpty()) {
+        while(!q.isEmpty()) { // 경계선 바깥 구역을 체크하기 위해..
             int tmp[] = q.poll();
             int x = tmp[0];
             int y = tmp[1];
@@ -49,7 +49,7 @@ public class Main17779 {
 
                 if(nx <= 0 || ny <= 0 || nx >= N+1 || ny >= N+1 || arr[nx][ny] == 5) continue;
                 else if(arr[nx][ny] == 0) {
-                    arr[nx][ny] = -1;
+                    arr[nx][ny] = -1; // 일단 경계선 바깥 구역 -1 처리
                     q.add(new int[]{nx, ny});
                 }
             }
@@ -57,8 +57,8 @@ public class Main17779 {
         // .. 5
         for(int i = 1; i <= N; i++) {
             for(int j = 1; j <= N; j++) {
-                if(arr[i][j] != -1) arr[i][j] = 5;
-                else if(arr[i][j] != 5) arr[i][j] = 0;
+                if(arr[i][j] != -1) arr[i][j] = 5; // -1이 아닌 경우 경계선 안쪽이므로 구역 5로 지정
+                else if(arr[i][j] != 5) arr[i][j] = 0; // -1로 해놨던 구역은 1,2,3,4 구역 지정을 위해 다시 0으로 바
             }
         }
 
@@ -142,7 +142,7 @@ public class Main17779 {
         ArrayList<Integer> xx = new ArrayList<>();
         ArrayList<Integer> yy = new ArrayList<>();
 
-        for(int i = 1; i <= N; i++) {
+        for(int i = 1; i <= N; i++) { // 각각 x, y에 가능한 조합 구하기
             if((1 <= i) && (i < i+comb[1]+comb[2]) && (i+comb[1]+comb[2] <= N)) {
                 xx.add(i);
             }
@@ -153,7 +153,6 @@ public class Main17779 {
 
         for (Integer x : xx) {
             for (Integer y : yy) {
-//                System.out.println(x + " " + y);
                 init();
                 solve(x, y, comb[1], comb[2]);
             }
@@ -162,7 +161,6 @@ public class Main17779 {
 
     public static void combD(int cnt) {  // 1) d1, d2 조합 구하기
         if(cnt == 2) {
-//            System.out.println(Arrays.toString(comb));
             combXY();
             return;
         }
