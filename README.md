@@ -70,6 +70,9 @@
 * [돌 던지기](https://www.acmicpc.net/problem/3025)❓
 * [모노미노도미노](https://www.acmicpc.net/problem/19235)❓
 * [청소년 상어](https://www.acmicpc.net/problem/19236)
+* [게리멘더링2](https://www.acmicpc.net/problem/17779)
+* [컨베이어 벨트 위의 로봇](https://www.acmicpc.net/problem/20055)
+* [마법사 상어와 파이어볼](https://www.acmicpc.net/problem/20056)
 
 
 
