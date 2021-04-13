@@ -73,6 +73,8 @@
 * [게리멘더링2](https://www.acmicpc.net/problem/17779)
 * [컨베이어 벨트 위의 로봇](https://www.acmicpc.net/problem/20055)
 * [마법사 상어와 파이어볼](https://www.acmicpc.net/problem/20056)
+* [스타트 택시](https://www.acmicpc.net/problem/19238)
+* [새로운 게임2](https://www.acmicpc.net/problem/17837)
 
 
 
