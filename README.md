@@ -52,6 +52,7 @@
 * [맥주 마시면서 걸어가기](https://www.acmicpc.net/problem/9205) 
 * [모양 만들기](https://www.acmicpc.net/problem/16932)
 * [달이 차오른다, 가자.](https://www.acmicpc.net/problem/1194)
+* [N과 M 시리즈](https://www.acmicpc.net/workbook/view/2052)
 
 
 
