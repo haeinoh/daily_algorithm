@@ -1,10 +1,26 @@
 # Daily Algorithm
 
+##### 프로그래머스 전부 다 풀기 2021/07/15~
+
+❓ 아이디어가 아예 생각 안 난 문제 
+
+⚠️ 힌트보고 푼 문제
+
+✅ 다시 푼 문제
+
+### [프로그래머스100]
+
+1. [폰켓몬](https://programmers.co.kr/learn/courses/30/lessons/1845) (찾아라 프로그래밍 마에스터 - L1)
+2. [숫자 문자열과 영단어](https://programmers.co.kr/learn/courses/30/lessons/81301) (2021 카카오 채용연계형 인턴십 - L1)
+3. 
+
+
+
+------------------------
+
 ##### *쉬운 문제라도 매일 하루에 한 문제씩 꾸준히 풀기* (2020/11/07 ~)
 
-
-
-❓  해결 못한 문제 
+❓ 해결 못한 문제 
 
 ⚠️ 풀었지만 헷갈린 문제
 
@@ -232,6 +248,3 @@
 * [Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
 * [Substring With Concatenation  Of All Words](https://leetcode.com/problems/substring-with-concatenation-of-all-words/)
 * [Unique Paths ii](https://leetcode.com/problems/unique-paths-ii/)
-
-
-
