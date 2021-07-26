@@ -9,7 +9,7 @@ public class Solution42747 {
         boolean flag = false;
         while(true) {
             if(index >= citations.length) break;
-            if(citations[index] >= h) { 
+            if(citations[index] >= h) {
                 if(index == 0) break;
                 else index--;
                 h++;
@@ -27,7 +27,7 @@ public class Solution42747 {
         return h;
     }
     public static void main(String[] args) {
-        int[] c = {28, 29};
+        int[] c = {0, 0, 1, 0, 0};
         System.out.println(solution(c));
     }
 }
