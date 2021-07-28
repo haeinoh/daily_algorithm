@@ -27,7 +27,10 @@
 15. [올바른 괄호](https://programmers.co.kr/learn/courses/30/lessons/12909#) (L2)
 16. [기능개발](https://programmers.co.kr/learn/courses/30/lessons/42586?language=java) (L2)
 17. [이진 변환 반복하기](https://programmers.co.kr/learn/courses/30/lessons/70129) (L2)
-18. 
+18. [짝지어 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12973?language=java) (2017 팁스타운 - L2)
+19. [소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/42839?language=java) (완전탐색 - L2)
+20. [주식가격](https://programmers.co.kr/learn/courses/30/lessons/42584) (L2)
+21. 
 
 
 

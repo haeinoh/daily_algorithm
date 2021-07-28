@@ -3,16 +3,11 @@ import java.util.Arrays;
 public class Solution42584 {
     static int[] solution(int[] prices) {
         int[] answer = new int[prices.length];
-        answer[prices.length-1] = 0;
-        for(int i = 0; i <= prices.length - 2; i++) {
-            if(prices[i] < prices[prices.length-1]) answer[i] = prices.length - 1 - i;
-            else {
-                for(int j = i+1; j <= prices.length - 2; j++) {
-                    if(prices[j] < prices[i] || prices[j] > prices[i]) {
-                        answer[i] = (j-i);
-                        break;
-                    }
-                }
+
+        for(int i = 0; i < answer.length; i++) {
+            for(int j = i+1; j < answer.length; j++) {
+                answer[i]++;
+                if(prices[i] > prices[j]) break;
             }
         }
         return answer;
