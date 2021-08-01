@@ -35,8 +35,9 @@
 23. [더 맵게](https://programmers.co.kr/learn/courses/30/lessons/42626?language=java) (L2)
 24. [피보나치 수](https://programmers.co.kr/learn/courses/30/lessons/12945) (L2)
 25. [행렬의 곱셈](https://programmers.co.kr/learn/courses/30/lessons/12949#) (L2)
-
-
+26. [땅따먹기](https://programmers.co.kr/learn/courses/30/lessons/12913) (L2)
+27. [삼각 달팽이](https://programmers.co.kr/learn/courses/30/lessons/68645) (L2)
+28. 
 
 ------------------------
 
