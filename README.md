@@ -29,15 +29,18 @@
 17. [이진 변환 반복하기](https://programmers.co.kr/learn/courses/30/lessons/70129) (L2)
 18. [짝지어 제거하기](https://programmers.co.kr/learn/courses/30/lessons/12973?language=java) (2017 팁스타운 - L2)
 19. [소수 찾기](https://programmers.co.kr/learn/courses/30/lessons/42839?language=java) (완전탐색 - L2)
-20. [주식가격](https://programmers.co.kr/learn/courses/30/lessons/42584) (L2)
-21. [배달](https://programmers.co.kr/learn/courses/30/lessons/12978) (L2)
-22. [2개 이하로 다른 비트](https://programmers.co.kr/learn/courses/30/lessons/77885) (월간 코드 챌린지 시즌2 - L2)
-23. [더 맵게](https://programmers.co.kr/learn/courses/30/lessons/42626?language=java) (L2)
-24. [피보나치 수](https://programmers.co.kr/learn/courses/30/lessons/12945) (L2)
-25. [행렬의 곱셈](https://programmers.co.kr/learn/courses/30/lessons/12949#) (L2)
-26. [땅따먹기](https://programmers.co.kr/learn/courses/30/lessons/12913) (L2)
-27. [삼각 달팽이](https://programmers.co.kr/learn/courses/30/lessons/68645) (L2)
-28. 
+20. [프린터](https://programmers.co.kr/learn/courses/30/lessons/42587?language=java) (L2)
+21. [주식가격](https://programmers.co.kr/learn/courses/30/lessons/42584) (L2)
+22. [배달](https://programmers.co.kr/learn/courses/30/lessons/12978) (L2)
+23. [2개 이하로 다른 비트](https://programmers.co.kr/learn/courses/30/lessons/77885) (월간 코드 챌린지 시즌2 - L2)
+24. [더 맵게](https://programmers.co.kr/learn/courses/30/lessons/42626?language=java) (L2)
+25. [피보나치 수](https://programmers.co.kr/learn/courses/30/lessons/12945) (L2)
+26. [행렬의 곱셈](https://programmers.co.kr/learn/courses/30/lessons/12949#) (L2)
+27. [땅따먹기](https://programmers.co.kr/learn/courses/30/lessons/12913) (L2)
+28. [삼각 달팽이](https://programmers.co.kr/learn/courses/30/lessons/68645) (L2)
+29. [가장 큰 정사각형 찾기](https://programmers.co.kr/learn/courses/30/lessons/12905) (L2)
+30. [가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746) (L2)
+31. [큰 수 만들기](https://programmers.co.kr/learn/courses/30/lessons/42883) (L2)
 
 ------------------------
 
