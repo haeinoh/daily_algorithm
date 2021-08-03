@@ -41,6 +41,8 @@
 29. [가장 큰 정사각형 찾기](https://programmers.co.kr/learn/courses/30/lessons/12905) (L2)
 30. [가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746) (L2)
 31. [큰 수 만들기](https://programmers.co.kr/learn/courses/30/lessons/42883) (L2)
+32. [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860) (L2)
+33. 
 
 ------------------------
 
