@@ -42,7 +42,7 @@
 30. [가장 큰 수](https://programmers.co.kr/learn/courses/30/lessons/42746) (L2)
 31. [큰 수 만들기](https://programmers.co.kr/learn/courses/30/lessons/42883) (L2)
 32. [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860) (L2)
-33. 
+33. [방문 길이](https://programmers.co.kr/learn/courses/30/lessons/49994) (L2)
 
 ------------------------
 

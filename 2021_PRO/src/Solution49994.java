@@ -1,43 +1,47 @@
-import java.util.HashMap;
-import java.util.Map;
 
 public class Solution49994 {
-    public static Map<Character, Integer> map;
-    public static boolean[][] vtd;
-    public static int[] dx = {-1, 0, 1, 0};
-    public static int[] dy = {0, -1, 0, 1};
+    public static boolean[][][][] vtd;
     public static int solution(String dirs) {
         int answer = 0;
-        vtd = new boolean[10][10];
-        map = new HashMap<>();
-        map.put('U', 0);
-        map.put('L', 1);
-        map.put('D', 2);
-        map.put('R', 3);
-
-        int x = 5;
-        int y = 5;
-
+        vtd = new boolean[11][11][11][11];
+        int x = 0;
+        int y = 0;
         for(int i = 0; i < dirs.length(); i++) {
-            Character ch = dirs.charAt(i);
-
-            int nx = x + dx[map.get(ch)];
-            int ny = y + dy[map.get(ch)];
-
-            if(nx < 0 || ny < 0 || nx >= 10 || ny >= 10) continue;
-            if(!vtd[nx][ny]) answer++;
-            System.out.println(" >> " + nx + " " + ny + " || " + vtd[nx][ny]);
-            vtd[nx][ny] = true;
+            char ch = dirs.charAt(i);
+            int nx = x;
+            int ny = y;
+            switch (ch) {
+                case 'U':
+                    if(ny + 1 <= 5) ny += 1;
+                    else continue;
+                    break;
+                case 'L':
+                    if(nx - 1 >= -5) nx -= 1;
+                    else continue;
+                    break;
+                case 'D':
+                    if(ny - 1 >= -5) ny -= 1;
+                    else continue;
+                    break;
+                case 'R':
+                    if(nx + 1 <= 5) nx += 1;
+                    else continue;
+                    break;
+            }
+            if (!vtd[nx+5][ny+5][x+5][y+5]){
+                vtd[x+5][y+5][nx+5][ny+5] = true;
+                vtd[nx+5][ny+5][x+5][y+5] = true;
+                answer++;
+            }
             x = nx;
             y = ny;
         }
-
         return answer;
     }
 
     public static void main(String[] args) {
-        String d = "ULURRDLLU";
-//        String d = "LULLLLLLU";
+        String d = "UUUUDUDUDUUU";
+//        String d = "UDU";
         System.out.println(solution(d));
     }
 }
