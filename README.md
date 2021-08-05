@@ -43,6 +43,8 @@
 31. [큰 수 만들기](https://programmers.co.kr/learn/courses/30/lessons/42883) (L2)
 32. [조이스틱](https://programmers.co.kr/learn/courses/30/lessons/42860) (L2)
 33. [방문 길이](https://programmers.co.kr/learn/courses/30/lessons/49994) (L2)
+34. [전화번호 목록](https://programmers.co.kr/learn/courses/30/lessons/42577) (L2)
+35. [괄호 회전하기](https://programmers.co.kr/learn/courses/30/lessons/76502) (L2)
 
 ------------------------
 
