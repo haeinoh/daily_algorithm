@@ -46,7 +46,10 @@
 34. [전화번호 목록](https://programmers.co.kr/learn/courses/30/lessons/42577) (L2)
 35. [괄호 회전하기](https://programmers.co.kr/learn/courses/30/lessons/76502) (L2)
 36. [행렬 테두리 회전하기](https://programmers.co.kr/learn/courses/30/lessons/77485) (L2)
-37. 
+37. [단체사진 찍기](https://programmers.co.kr/learn/courses/30/lessons/1835) (2017 카카오 코드 본선 - L2)
+38. [쿼드압축 후 개수 세기](https://programmers.co.kr/learn/courses/30/lessons/68936) (월간 코드 챌린지 시즌 1 - L2)
+39. [예상 대진표](https://programmers.co.kr/learn/courses/30/lessons/12985) (2017 팁스타운 - L2)
+40. [위장](https://programmers.co.kr/learn/courses/30/lessons/42578) (L2)
 
 ------------------------
 
