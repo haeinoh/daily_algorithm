@@ -1,7 +1,26 @@
+import java.util.*;
+
 public class Solution42890 {
+    static ArrayList<HashSet<Integer>> list;
+    static void solve(int limit, String[][] relation, int count, HashSet<Integer> set) {
+        if(count == limit) {
+
+            return;
+        }
+
+        for(int i = 0; i < relation.length; i++) {
+
+            solve(limit, relation, count+1, set);
+        }
+
+    }
     static int solution(String[][] relation) {
         int answer = 0;
+        list = new ArrayList<>();
 
+        for(int i = 0; i < relation[0].length; i++) {
+            solve(i, relation, 0, new HashSet<>());
+        }
 
         return answer;
     }
