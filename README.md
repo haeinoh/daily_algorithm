@@ -50,6 +50,10 @@
 38. [쿼드압축 후 개수 세기](https://programmers.co.kr/learn/courses/30/lessons/68936) (월간 코드 챌린지 시즌 1 - L2)
 39. [예상 대진표](https://programmers.co.kr/learn/courses/30/lessons/12985) (2017 팁스타운 - L2)
 40. [위장](https://programmers.co.kr/learn/courses/30/lessons/42578) (L2)
+41. [단어 변환](https://programmers.co.kr/learn/courses/30/lessons/43163) (L3)
+42. [등굣길](https://programmers.co.kr/learn/courses/30/lessons/42898) (L3)
+43. [이중우선순위큐](https://programmers.co.kr/learn/courses/30/lessons/42628) (L3)
+44. [섬 연결하기](https://programmers.co.kr/learn/courses/30/lessons/42861#) (L3)
 
 ------------------------
 
