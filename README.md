@@ -54,6 +54,9 @@
 42. [등굣길](https://programmers.co.kr/learn/courses/30/lessons/42898) (L3)
 43. [이중우선순위큐](https://programmers.co.kr/learn/courses/30/lessons/42628) (L3)
 44. [섬 연결하기](https://programmers.co.kr/learn/courses/30/lessons/42861#) (L3)
+45. [위클리 챌린지 1주차](https://programmers.co.kr/learn/courses/30/lessons/82612)
+46. [위클리 챌린지 2주차](https://programmers.co.kr/learn/courses/30/lessons/83201)
+47. [위클리 챌린지 4주차](https://programmers.co.kr/learn/courses/30/lessons/84325)
 
 ------------------------
 
