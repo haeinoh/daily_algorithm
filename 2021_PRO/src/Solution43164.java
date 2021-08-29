@@ -2,9 +2,8 @@ import java.util.*;
 
 public class Solution43164 {
     static String[] solution(String[][] tickets) {
-        String[] answer = {};
 
-        return answer;
+        return null;
     }
 
     public static void main(String[] args) {

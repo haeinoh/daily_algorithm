@@ -57,6 +57,10 @@
 45. [위클리 챌린지 1주차](https://programmers.co.kr/learn/courses/30/lessons/82612)
 46. [위클리 챌린지 2주차](https://programmers.co.kr/learn/courses/30/lessons/83201)
 47. [위클리 챌린지 4주차](https://programmers.co.kr/learn/courses/30/lessons/84325)
+48. [단속 카메라](https://programmers.co.kr/learn/courses/30/lessons/42884) (L3)
+49. [기지국 설치](https://programmers.co.kr/learn/courses/30/lessons/12979) (Summer/Winter Coding(~2018) - L3)
+50. [숫자 게임](https://programmers.co.kr/learn/courses/30/lessons/12987) (Summer/Winter Coding(~2018) - L3)
+51. [최고의 집합](https://programmers.co.kr/learn/courses/30/lessons/12938) (L3)
 
 ------------------------
 
