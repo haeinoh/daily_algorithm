@@ -61,6 +61,12 @@
 49. [기지국 설치](https://programmers.co.kr/learn/courses/30/lessons/12979) (Summer/Winter Coding(~2018) - L3)
 50. [숫자 게임](https://programmers.co.kr/learn/courses/30/lessons/12987) (Summer/Winter Coding(~2018) - L3)
 51. [최고의 집합](https://programmers.co.kr/learn/courses/30/lessons/12938) (L3)
+52. [입국심사](https://programmers.co.kr/learn/courses/30/lessons/43238) (L3)
+53. [가장 먼 노드](https://programmers.co.kr/learn/courses/30/lessons/49189) (L3)
+54. [정수 삼각형](https://programmers.co.kr/learn/courses/30/lessons/43105) (L3)
+55. [위클리 챌린지 5주차](https://programmers.co.kr/learn/courses/30/lessons/84512)
+56. [순위](https://programmers.co.kr/learn/courses/30/lessons/49191) (L3)
+57. 
 
 ------------------------
 
