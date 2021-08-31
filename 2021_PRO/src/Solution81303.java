@@ -2,7 +2,7 @@ import java.util.*;
 public class Solution81303 {
     static String solution(int n, int k, String[] cmd) {
         String answer = "";
-       
+
         return answer;
     }
 
