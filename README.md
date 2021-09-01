@@ -66,7 +66,9 @@
 54. [정수 삼각형](https://programmers.co.kr/learn/courses/30/lessons/43105) (L3)
 55. [위클리 챌린지 5주차](https://programmers.co.kr/learn/courses/30/lessons/84512)
 56. [순위](https://programmers.co.kr/learn/courses/30/lessons/49191) (L3)
-57. 
+57. [표 편집](https://programmers.co.kr/learn/courses/30/lessons/81303) (L3)
+58. [가장 긴 팰린드롬](https://programmers.co.kr/learn/courses/30/lessons/81303) (L3)
+59. 
 
 ------------------------
 
