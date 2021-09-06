@@ -1,11 +1,10 @@
-import java.util.*;
+import java.util.Arrays;
 
-public class Solution43164 {
+public class Solution43164_2 {
     static String answer;
     static boolean[] vtd;
     static void solve(int count, String word, String res, String[][] t) {
         if(count == t.length) {
-//            System.out.println(res);
             if(answer.length() == 0) answer = res;
             else if(answer.compareTo(res) > 0) answer = res;
             return;
@@ -22,7 +21,13 @@ public class Solution43164 {
     static String[] solution(String[][] tickets) {
         answer = "";
         vtd = new boolean[tickets.length];
-        solve(0, "ICN", "ICN", tickets);
+        for(int i = 0; i < tickets.length; i++) {
+            if(tickets[i][0].equals("ICN")) {
+                vtd[i] = true;
+                solve(1, tickets[i][1], "ICN " + tickets[i][1], tickets);
+                vtd[i] = false;
+            }
+        }
 
         return answer.split(" ");
     }

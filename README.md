@@ -68,7 +68,12 @@
 56. [순위](https://programmers.co.kr/learn/courses/30/lessons/49191) (L3)
 57. [표 편집](https://programmers.co.kr/learn/courses/30/lessons/81303) (L3)
 58. [가장 긴 팰린드롬](https://programmers.co.kr/learn/courses/30/lessons/81303) (L3)
-59. 
+59. [N-Queen](https://programmers.co.kr/learn/courses/30/lessons/12952) (L3)
+60. [하노이의 탑](https://programmers.co.kr/learn/courses/30/lessons/12946) (L3)
+61. [위클리 챌린지 6주차](https://programmers.co.kr/learn/courses/30/lessons/85002)
+62. [여행경로](https://programmers.co.kr/learn/courses/30/lessons/43164) (L3)
+63. [야근지수]([위클리 챌린지 6주차](https://programmers.co.kr/learn/courses/30/lessons/85002)) (L3)
+64. 
 
 ------------------------
 
