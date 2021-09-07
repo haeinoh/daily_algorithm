@@ -73,7 +73,8 @@
 61. [위클리 챌린지 6주차](https://programmers.co.kr/learn/courses/30/lessons/85002)
 62. [여행경로](https://programmers.co.kr/learn/courses/30/lessons/43164) (L3)
 63. [야근지수]([위클리 챌린지 6주차](https://programmers.co.kr/learn/courses/30/lessons/85002)) (L3)
-64. 
+64. [멀리뛰기](https://programmers.co.kr/learn/courses/30/lessons/12914) (L3)
+65. 
 
 ------------------------
 
