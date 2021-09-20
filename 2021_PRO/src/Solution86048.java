@@ -4,35 +4,33 @@ import java.util.Arrays;
 public class Solution86048 {
     public static int[] solution(int[] enter, int[] leave) {
         int[] answer = new int[enter.length];
-        ArrayList<Integer> in = new ArrayList<>();
-        ArrayList<Integer> out = new ArrayList<>();
-        for(int i = 0; i < enter.length; i++) {
-            in.add(enter[i]);
-            out.add(leave[i]);
-        }
-        boolean[][] vtd = new boolean[enter.length][enter.length];
-        for(int i = 0; i < enter.length; i++) {
-            int outidx = out.indexOf(enter[i]) - 1;
-            if(outidx >= 0) {
-                int inidx = in.indexOf(out.get(outidx));
-                for (int j = i + 1; j <= inidx; j++) {
-                    System.out.println((in.get(i)-1) + " " +(in.get(j)-1));
-                    vtd[in.get(i)-1][in.get(j)-1] = true;
-                    vtd[in.get(j)-1][in.get(i)-1] = true;
+        int idx = 0;
+        ArrayList<Integer> list = new ArrayList<>();
+        for(int i = 0; i < leave.length; i++) {
+            for(int j = idx; j < enter.length; j++) {
+                if(answer[leave[i]-1] > 0) break;
+                list.add(enter[j]);
+                idx++;
+                if(enter[j] == leave[i]) {
+                    break;
                 }
             }
+            System.out.println("before " + list.toString());
+            list.remove(Integer.valueOf(leave[i]));
+            System.out.println(list.toString() + " " + leave[i]);
+            for(int j = 0; j < list.size(); j++) {
+                answer[list.get(j) - 1]++;
+            }
+            answer[leave[i] - 1] += list.size();
+            System.out.println("answer " + Arrays.toString(answer));
         }
-
-        for(int i = 0; i < vtd.length; i++)
-            for(int j = 0; j < vtd[i].length; j++)
-                if(vtd[i][j]) answer[i]++;
 
         return answer;
     }
 
     public static void main(String[] args) {
-        int[] e = {3, 2, 1};
-        int[] l = {1, 3, 2};
+        int[] e = {1, 4, 2, 3};
+        int[] l = {2, 1, 3, 4};
         System.out.println(Arrays.toString(solution(e, l)));
     }
 }
