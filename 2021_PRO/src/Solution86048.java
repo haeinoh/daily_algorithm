@@ -15,14 +15,11 @@ public class Solution86048 {
                     break;
                 }
             }
-            System.out.println("before " + list.toString());
             list.remove(Integer.valueOf(leave[i]));
-            System.out.println(list.toString() + " " + leave[i]);
             for(int j = 0; j < list.size(); j++) {
                 answer[list.get(j) - 1]++;
             }
             answer[leave[i] - 1] += list.size();
-            System.out.println("answer " + Arrays.toString(answer));
         }
 
         return answer;
