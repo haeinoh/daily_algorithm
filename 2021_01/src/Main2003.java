@@ -3,7 +3,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main2003 {
+public class 		Main2003 {
 	public static int N, M, arr[], answer;
 	
 	public static void main(String[] args) throws Exception{
@@ -22,11 +22,11 @@ public class Main2003 {
 		int sum = 0;
 		
 		while(start < N) {
-			if(sum >=M) sum -= arr[start++]; // sumÀÌ Mº¸´Ù Ä¿Á³À» ¶§, »õ·Î¿î ÇöÀç °ªÀ» »©ÁÖ°í, start¸¦ ÇÑÄ­ ¾ÕÀ¸·Î ÀÌµ¿ÇÑ´Ù. 
+			if(sum >=M) sum -= arr[start++]; // sumï¿½ï¿½ Mï¿½ï¿½ï¿½ï¿½ Ä¿ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½, ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ö°ï¿½, startï¿½ï¿½ ï¿½ï¿½Ä­ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ìµï¿½ï¿½Ñ´ï¿½. 
 			else if(end == N) break;
-			else sum += arr[end++]; //(sumÀÌ Mº¸´Ù ÀÛÀ» ‹š) sum¿¡ »õ·Î¿î ÇöÀç °ªÀ» ´õÇØÁØ ÈÄ, end Æ÷ÀÎÅÍ¸¦ ÇÑ Ä­ ÀÌµ¿
+			else sum += arr[end++]; //(sumï¿½ï¿½ Mï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½) sumï¿½ï¿½ ï¿½ï¿½ï¿½Î¿ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½, end ï¿½ï¿½ï¿½ï¿½ï¿½Í¸ï¿½ ï¿½ï¿½ Ä­ ï¿½Ìµï¿½
 			
-			if(sum == M) answer++; // sumÀÌ M°ú °°Àº °ªÀÏ ¶§ 
+			if(sum == M) answer++; // sumï¿½ï¿½ Mï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ 
 		}
 		
 		
