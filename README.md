@@ -64,14 +64,15 @@
 60. [하노이의 탑](https://programmers.co.kr/learn/courses/30/lessons/12946) (L3)
 61. [위클리 챌린지 6주차](https://programmers.co.kr/learn/courses/30/lessons/85002)
 62. [여행경로](https://programmers.co.kr/learn/courses/30/lessons/43164) (L3)
-63. [야근지수]([위클리 챌린지 6주차](https://programmers.co.kr/learn/courses/30/lessons/85002)) (L3)
+63. [야근지수](https://programmers.co.kr/learn/courses/30/lessons/85002) (L3) (위클리 챌린지 6주차)
 64. [멀리뛰기](https://programmers.co.kr/learn/courses/30/lessons/12914) (L3)
 65. [없는 숫자 더하기](https://programmers.co.kr/learn/courses/30/lessons/86051) (L1) (월간 코드 챌린지 시즌3)
 66. [음양 더하기](https://programmers.co.kr/learn/courses/30/lessons/76501) (L1) (월간 코드 챌린지 시즌2)
 67. [약수의 개수와 덧셈](https://programmers.co.kr/learn/courses/30/lessons/77884#) (L1)
 68. [위클리 챌린지 7주차](https://programmers.co.kr/learn/courses/30/lessons/86048)
 69. [위클리 챌린지 3주차](https://programmers.co.kr/learn/courses/30/lessons/84021) (L3)
-70. 
+70. [위클리 챌린지 12주차](https://programmers.co.kr/learn/courses/30/lessons/87946) (L2)
+71. 
 
 ------------------------
 
