@@ -1,4 +1,3 @@
-import java.util.Arrays;
 
 public class Solution87946 {
     public static int answer;

@@ -1,6 +1,6 @@
 # Daily Algorithm
 
-### [프로그래머스100] (7/15 ~)
+### [프로그래머스200] (7/15 ~)
 
 1. [폰켓몬](https://programmers.co.kr/learn/courses/30/lessons/1845) (찾아라 프로그래밍 마에스터 - L1)
 2. [숫자 문자열과 영단어](https://programmers.co.kr/learn/courses/30/lessons/81301) (2021 카카오 채용연계형 인턴십 - L1)
@@ -72,7 +72,9 @@
 68. [위클리 챌린지 7주차](https://programmers.co.kr/learn/courses/30/lessons/86048)
 69. [위클리 챌린지 3주차](https://programmers.co.kr/learn/courses/30/lessons/84021) (L3)
 70. [위클리 챌린지 12주차](https://programmers.co.kr/learn/courses/30/lessons/87946) (L2)
-71. 
+71. [n^2 배열 자르기](https://programmers.co.kr/learn/courses/30/lessons/87390) (L2)
+72. [스티커 모으기(2)](https://programmers.co.kr/learn/courses/30/lessons/12971) (L3) (Summer/Winter Coding(~2018)) ---- 166
+73. 
 
 ------------------------
 
