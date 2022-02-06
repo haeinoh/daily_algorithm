@@ -14,7 +14,8 @@
 4. [1998년생인 내가 태국에서는 2541년생?!](https://www.acmicpc.net/problem/18108)
 5. [덩치](https://www.acmicpc.net/problem/7568)
 6. [단어 수학](https://www.acmicpc.net/problem/1339)
-7. 
+7. [분수찾기](https://www.acmicpc.net/problem/1193)
+8. 
 
 #### [PROGRAMMERS]
 
