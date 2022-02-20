@@ -15,7 +15,10 @@
 5. [덩치](https://www.acmicpc.net/problem/7568)
 6. [단어 수학](https://www.acmicpc.net/problem/1339)
 7. [분수찾기](https://www.acmicpc.net/problem/1193)
-8. 
+8. [오븐 시계](https://www.acmicpc.net/problem/2525)
+9. [주사위 세개](https://www.acmicpc.net/problem/2480)
+10. [부녀회장이 될테야](https://www.acmicpc.net/problem/2775)
+11. 
 
 #### [PROGRAMMERS]
 
