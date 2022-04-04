@@ -27,7 +27,7 @@ public class Main211 {
                     res[j]+=tmp[arr[j][i]]-1;
                 }
             }
-        }
+        } 
 
         int max = -987654321;
         for(int i = 0; i <  N; i++) {
