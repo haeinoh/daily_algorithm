@@ -27,30 +27,24 @@ public class Main301 {
         int aidx = 0;
         int bidx = 0;
         for(int i = 0; i < N+M; i++) {
-            int atmp = 0;
-            int btmp = 0;
-            if(aidx < N) {
-                atmp = arr[aidx];
-            }
-            if(bidx < M) {
-                btmp = brr[bidx];
-            }
-            if(aidx< N && bidx < M) {
-                if(atmp < btmp) {
-                    answer[idx] = atmp;
-                    aidx++;
-                } else {
-                    answer[idx] = btmp;
-                    bidx++;
+            if(aidx >= N) {
+                for(int j = bidx; j < M; j++) {
+                    answer[idx++] = brr[j];
                 }
-            } else if(aidx < N) {
-                answer[idx] = atmp;
-                aidx++;
+                break;
+            } else if(bidx >= M) {
+                for(int j = aidx; j < N; j++) {
+                    answer[idx++] = arr[j];
+                }
+                break;
             } else {
-                answer[idx] = btmp;
-                bidx++;
+                if(arr[aidx] < brr[bidx]) {
+                    answer[idx] = arr[aidx++];
+                } else {
+                    answer[idx] = brr[bidx++];
+                }
+                idx++;
             }
-            idx++;
         }
         StringBuilder sb = new StringBuilder();
         for(int i = 0; i < N+M; i++) sb.append(answer[i]).append(" ");
