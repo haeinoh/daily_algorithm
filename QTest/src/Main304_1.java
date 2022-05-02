@@ -3,7 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class Main304 {
+public class Main304_1 {
 
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
@@ -18,15 +18,17 @@ public class Main304 {
         }
 
         int start = 0;
-        int end = 1;
-        int sum = arr[0];
+        int sum = 0;
         int answer = 0;
-        while(start < N) {
-            if(sum >= M) sum -= arr[start++];
-            else if(end == N) break;
-            else sum += arr[end++];
-
+        for(int end = 0; end < N; end++) {
+            sum += arr[end];
             if(sum == M) answer++;
+            while(sum >= M) {
+                sum -= arr[start++];
+                if(sum == M) {
+                    answer++;
+                }
+            }
         }
 
         System.out.println(answer);
