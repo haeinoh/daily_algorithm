@@ -18,7 +18,23 @@ public class Main306 {
         }
 
         int answer = 0;
+        int cnt = 0;
+        int left = 0;
+        int right = 0;
 
+        while(left < N) {
+            if(cnt >= M) {
+                left++;
+                if(arr[left] == 0) cnt--;
+            } else if(right == N) break;
+            else {
+                if(arr[right] == 0) {
+                    cnt++;
+                }
+                right++;
+            }
+            answer = Math.max(answer, (right-left+1));
+        }
 
         System.out.println(answer);
     }
