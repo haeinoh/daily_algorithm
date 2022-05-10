@@ -1,37 +1,28 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Main306 {
-
+public class Main606 {
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(bf.readLine());
-        int N = Integer.parseInt(st.nextToken());
-        int M = Integer.parseInt(st.nextToken());
 
+        int N = Integer.parseInt(st.nextToken());
         st = new StringTokenizer(bf.readLine());
         int[] arr = new int[N];
         for(int i = 0; i < N; i++) {
             arr[i] = Integer.parseInt(st.nextToken());
         }
 
-        int answer = 0;
-        int cnt = 0;
-        int left = 0;
-        int right = 0;
-
-        while(right < N) {
-            if(arr[right] == 0) cnt++;
-            if(cnt > M) {
-                if(arr[left] == 0) cnt--;
-                left++;
-            }
-            answer = Math.max(answer, (right-left+1));
-            right++;
+        int[] comp = arr.clone(); // deep copy
+        Arrays.sort(comp);
+        StringBuilder sb = new StringBuilder();
+        for(int i = 0; i < comp.length; i++) {
+            if(arr[i] != comp[i]) sb.append(i+1).append(" ");
         }
-
-        System.out.println(answer);
+        System.out.println(sb.toString());
     }
 }
