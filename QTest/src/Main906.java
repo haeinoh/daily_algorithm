@@ -5,7 +5,7 @@ public class Main906 {
     public static int[] arr;
     public static int find(int v) { // find 함수는 집합 번호를 return 해줌
         if(v == arr[v]) return arr[v];
-        else return arr[v] = find(arr[v]);
+        else return arr[v] = find(arr[v]); // arr[v]를 넣음으로써 압축됨
     }
 
     public static void union(int a, int b) {
