@@ -6,60 +6,48 @@ import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class Main811 {
-    public static int N, M, answer;
+    public static int N;
     public static int[] dx = {-1, 0, 1, 0};
     public static int[] dy = {0, -1, 0, 1};
-    public static int[][] arr;
-    public static boolean[][] vtd;
+    public static int[][] arr, dist;
     public static Queue<int[]> q;
     public static void bfs() {
         q = new LinkedList<>();
-        q.add(new int[]{0, 0});
-        boolean flag = false;
+        q.offer(new int[]{0, 0});
+        arr[0][0] = 1;
         while(!q.isEmpty()) {
-            int size = q.size();
-            while(size > 0) {
-                int[] tmp = q.poll();
-                int x = tmp[0];
-                int y = tmp[1];
-                if(x == N-1 && y == M-1) {
-                    flag = true;
-                    break;
-                }
-                for(int i = 0; i < 4; i++) {
-                    int nx = x + dx[i];
-                    int ny = y + dy[i];
+            int[] tmp = q.poll();
+            int x = tmp[0];
+            int y = tmp[1];
 
-                    if(nx < 0 || ny < 0 || nx >= N || ny >= M || arr[nx][ny] != 0 || vtd[nx][ny]) continue;
-                    vtd[nx][ny] = true;
-                }
-                size--;
+            for(int i = 0; i < 4; i++) {
+                int nx = x + dx[i];
+                int ny = y + dy[i];
+
+                if(nx < 0 || ny < 0 || nx >= N || ny >= N || arr[nx][ny] == 1) continue;
+                arr[nx][ny] = 1;
+                q.offer(new int[]{nx,ny});
+                dist[nx][ny] = dist[x][y] + 1;
             }
-            answer++;
         }
-        if(!flag) answer = -1;
     }
     public static void main(String[] args) throws IOException {
         BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(bf.readLine());
-
-        M = Integer.parseInt(st.nextToken());
-        N = Integer.parseInt(st.nextToken());
-        arr = new int[N][M];
-        answer = 0;
+        N = 7;
+        arr = new int[N][N];
         int cnt = 0;
         for(int i = 0; i < N; i++) {
-            st = new StringTokenizer(bf.readLine());
-            for(int j = 0; j < M; j++) {
+            StringTokenizer st = new StringTokenizer(bf.readLine());
+            for(int j = 0; j < N; j++) {
                 arr[i][j] = Integer.parseInt(st.nextToken());
                 if(arr[i][j] == 1) cnt++;
             }
         }
-
-        if(cnt == N*M) System.out.println("0");
+        dist = new int[N][N];
+        if(cnt == N*N) System.out.println("-1");
         else {
             bfs();
-            System.out.println(answer);
+            System.out.println(dist[N-1][N-1]);
         }
     }
 }
