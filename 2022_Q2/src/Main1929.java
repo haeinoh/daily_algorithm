@@ -6,7 +6,7 @@ public class Main1929 {
         int M = sc.nextInt();
         int N = sc.nextInt();
 
-        boolean[] vtd = new boolean[N+1]; 
+        boolean[] vtd = new boolean[N+1];
         vtd[0] = vtd[1] = true;
         for(int i = 2; i <= Math.sqrt(N); i++) {
 //            if(vtd[i]) continue;
