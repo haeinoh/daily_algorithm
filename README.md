@@ -4,21 +4,11 @@
 
 ### 🔆 2022
 
-### Q1 (JAN - MAR)
+### Q3 (JUL - SEP)
 
 #### [BOJ]
 
-1. [좌표 정렬하기 2](https://www.acmicpc.net/problem/11651)
-2. [2021은 무엇이 특별할까?](https://www.acmicpc.net/problem/24039)
-3. [손익분기점](https://www.acmicpc.net/problem/1712)
-4. [1998년생인 내가 태국에서는 2541년생?!](https://www.acmicpc.net/problem/18108)
-5. [덩치](https://www.acmicpc.net/problem/7568)
-6. [단어 수학](https://www.acmicpc.net/problem/1339)
-7. [분수찾기](https://www.acmicpc.net/problem/1193)
-8. [오븐 시계](https://www.acmicpc.net/problem/2525)
-9. [주사위 세개](https://www.acmicpc.net/problem/2480)
-10. [부녀회장이 될테야](https://www.acmicpc.net/problem/2775)
-11. 
+1. 
 
 #### [PROGRAMMERS]
 
@@ -26,17 +16,7 @@
 
 #### [SOFTEER]
 
-1. [비밀메뉴](https://softeer.ai/practice/info.do?eventIdx=1&psProblemId=623)
-2. [전광판](https://softeer.ai/practice/info.do?eventIdx=1&psProblemId=624&sw_prbl_sbms_sn=42285)
-3. 
-
----
-
-### Q2 (APR- JUN)
-
----
-
-### Q3 (JUL - SEP)
+1. 
 
 -----
 
