@@ -3,7 +3,7 @@ import java.io.InputStreamReader;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class Main {
+public class Main1062 {
     public static int N, K, answer;
     public static String arr[];
     public static char alpha[] = {'b', 'd', 'e', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'o', 'p', 'q'
