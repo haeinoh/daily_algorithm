@@ -8,16 +8,8 @@
 
 #### [BOJ]
 
-1. 
-
-#### [PROGRAMMERS]
-
-
-
-#### [SOFTEER]
-
-1. 
-
+1. [최소힙](https://www.acmicpc.net/problem/1927)
+2. 
 -----
 
 ### Q4 (OCT - DEC)
@@ -117,23 +109,14 @@
 #### 트리
 
 * [트리](https://www.acmicpc.net/problem/1068)
-
 * [최소 스패닝 트리](https://www.acmicpc.net/problem/1197)
-
 * [트리순회](https://www.acmicpc.net/problem/1991)
-
 * [트리의 부모 찾기](https://www.acmicpc.net/problem/11725)
-
-* [도로네트워크](https://www.acmicpc.net/problem/3176) ✅ 
-
+* [도로네트워크](https://www.acmicpc.net/problem/3176) ✅
 * [트리의 지름](https://www.acmicpc.net/problem/1167)
-
-* [구간 합 구하기](https://www.acmicpc.net/problem/2042) ✅ 
-
+* [구간 합 구하기](https://www.acmicpc.net/problem/2042) ✅
 * [상근이의 여행](https://www.acmicpc.net/problem/9372)
-
 * [구간 합 구하기2](https://www.acmicpc.net/problem/10999)
-
 * [정점들의 거리](https://www.acmicpc.net/problem/1761)
 
   
@@ -201,33 +184,19 @@
 #### 기타
 
 * [평범한 배낭](https://www.acmicpc.net/problem/12865)
-
 * [줄 세우기](https://www.acmicpc.net/problem/2252)
-
 * [랜선 자르기](https://www.acmicpc.net/problem/1654)
-
 * [k번째 최단경로 찾기](https://www.acmicpc.net/problem/1854)❓
-
 * [문제집](https://www.acmicpc.net/problem/1766)
-
 * [파티](https://www.acmicpc.net/problem/1238)✅
-
 * [문자열 집합](https://www.acmicpc.net/problem/14425)
-
 * [음주 코딩](https://www.acmicpc.net/problem/5676)
-
 * [놀이공원](https://www.acmicpc.net/problem/1561)
-
 * [가르침](https://www.acmicpc.net/problem/1062)
-
 * [로봇탐색](https://www.acmicpc.net/problem/3649)
-
 * [달빛 여우](https://www.acmicpc.net/problem/16118)
-
 * [음악프로그램](https://www.acmicpc.net/problem/2623)
-
 * [공유기 설치](https://www.acmicpc.net/problem/2110)
-
   
 
 -----
