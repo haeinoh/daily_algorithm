@@ -6,9 +6,7 @@
 
 ### Q3 (JUL - SEP)
 
-#### [BOJ]
-
-1. [최소힙](https://www.acmicpc.net/problem/1927)
+1. [최소힙](https://www.acmicpc.net/problem/1927) (S2)
 2. 
 -----
 
