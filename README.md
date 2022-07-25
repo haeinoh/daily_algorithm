@@ -3,12 +3,16 @@
 ------
 
 ### 🔆 2022
+5135 359 0619
+3696 437 0722
 
 ### Q3 (JUL - SEP)
 
 1. [최소힙](https://www.acmicpc.net/problem/1927) (S2)
 2. [잃어버린 괄호](https://www.acmicpc.net/problem/1541) (S2)
-3. 
+3. [두 수의 합](https://www.acmicpc.net/problem/3273) (S3)
+4. [오큰수] (https://www.acmicpc.net/problem/17298) (G4)
+5. 
 -----
 
 ### Q4 (OCT - DEC)
