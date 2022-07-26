@@ -12,7 +12,7 @@
 2. [잃어버린 괄호](https://www.acmicpc.net/problem/1541) (S2)
 3. [두 수의 합](https://www.acmicpc.net/problem/3273) (S3)
 4. [오큰수] (https://www.acmicpc.net/problem/17298) (G4)
-5. 
+5. [숫자판 점프] (https://www.acmicpc.net/problem/2210) (S2)
 -----
 
 ### Q4 (OCT - DEC)
