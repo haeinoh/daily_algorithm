@@ -13,6 +13,8 @@
 3. [두 수의 합](https://www.acmicpc.net/problem/3273) (S3)
 4. [오큰수] (https://www.acmicpc.net/problem/17298) (G4)
 5. [숫자판 점프] (https://www.acmicpc.net/problem/2210) (S2)
+6. [수열] (https://www.acmicpc.net/problem/2559) (S3)
+7. [구간 합 구하기4] (https://www.acmicpc.net/problem/11659) (S3)
 -----
 
 ### Q4 (OCT - DEC)
