@@ -15,6 +15,8 @@
 5. [숫자판 점프] (https://www.acmicpc.net/problem/2210) (S2)
 6. [수열] (https://www.acmicpc.net/problem/2559) (S3)
 7. [구간 합 구하기4] (https://www.acmicpc.net/problem/11659) (S3)
+8. [합 구하기] (https://www.acmicpc.net/problem/11441) (S3)
+9. 
 -----
 
 ### Q4 (OCT - DEC)

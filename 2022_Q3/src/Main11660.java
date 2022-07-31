@@ -19,12 +19,14 @@ public class Main11660 {
             st = new StringTokenizer(bf.readLine());
             for(int j = 1; j <= N; j++){
                 arr[i][j] = Integer.parseInt(st.nextToken());
-
-                if(j == 1) sum[i][j] = arr[i][j] + sum[i-1][N];
-                else sum[i][j] = arr[i][j] + sum[i][j-1];
             }
         }
 
+        for(int i = 1; i <= N; i++) {
+            for(int j = 1; j <= N; j++) {
+
+            }
+        }
 //        for(int p[]: sum)
 //            System.out.println(Arrays.toString(p));
 
@@ -36,13 +38,8 @@ public class Main11660 {
             int x2 = Integer.parseInt(st.nextToken());
             int y2 = Integer.parseInt(st.nextToken());
             int ans = 0;
-            if(x1 == x2) {
-                if(y1 == 1) ans = sum[x2][y2] - sum[x1-1][N];
-                else ans = sum[x2][y2] - sum[x1][y1-1];
-            } else {
-                if(y1 == 1) ans = sum[x2][y2] - sum[x1-1][N] - (sum[x2][y1-1] - sum[x1-1][y2]);
-                else ans = sum[x2][y2] - sum[x1][y1-1] - (sum[x2][y1-1] - sum[x1][y2]);
-            }
+
+
             sb.append(ans).append("\n");
         }
 
