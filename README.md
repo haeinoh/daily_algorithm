@@ -16,7 +16,8 @@
 6. [수열] (https://www.acmicpc.net/problem/2559) (S3)
 7. [구간 합 구하기4] (https://www.acmicpc.net/problem/11659) (S3)
 8. [합 구하기] (https://www.acmicpc.net/problem/11441) (S3)
-9. 
+9. [배열 돌리기3] (https://www.acmicpc.net/problem/16935) (S1)
+10. 
 -----
 
 ### Q4 (OCT - DEC)
