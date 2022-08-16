@@ -19,7 +19,8 @@
 9. [배열 돌리기3] (https://www.acmicpc.net/problem/16935) (S1)
 10. [로마 숫자 만들기] (https://www.acmicpc.net/problem/16922) (S3)
 11. [이모티콘] (https://www.acmicpc.net/problem/14226) (G4)
-12. 
+12. [회장뽑기] (https://www.acmicpc.net/problem/2660) (G5)
+13. 
 -----
 
 ### Q4 (OCT - DEC)
