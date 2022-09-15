@@ -20,7 +20,8 @@
 10. [로마 숫자 만들기] (https://www.acmicpc.net/problem/16922) (S3)
 11. [이모티콘] (https://www.acmicpc.net/problem/14226) (G4)
 12. [회장뽑기] (https://www.acmicpc.net/problem/2660) (G5)
-13. 
+13. [성격 유형 검사하기] (https://school.programmers.co.kr/learn/courses/30/lessons/118666) (L1)
+14. 
 -----
 
 ### Q4 (OCT - DEC)
