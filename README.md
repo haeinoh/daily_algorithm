@@ -21,7 +21,8 @@
 11. [이모티콘] (https://www.acmicpc.net/problem/14226) (G4)
 12. [회장뽑기] (https://www.acmicpc.net/problem/2660) (G5)
 13. [성격 유형 검사하기] (https://school.programmers.co.kr/learn/courses/30/lessons/118666) (L1)
-14. 
+14. [k진수에서 소수 개수 구하기] (https://school.programmers.co.kr/learn/courses/30/lessons/92335) (L2)
+15. 
 -----
 
 ### Q4 (OCT - DEC)
