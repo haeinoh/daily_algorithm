@@ -22,7 +22,8 @@
 12. [회장뽑기] (https://www.acmicpc.net/problem/2660) (G5)
 13. [성격 유형 검사하기] (https://school.programmers.co.kr/learn/courses/30/lessons/118666) (L1)
 14. [k진수에서 소수 개수 구하기] (https://school.programmers.co.kr/learn/courses/30/lessons/92335) (L2)
-15. 
+15. [두 큐 합 같게 만들기] (https://school.programmers.co.kr/learn/courses/30/lessons/118667) (L2)
+16. 
 -----
 
 ### Q4 (OCT - DEC)
