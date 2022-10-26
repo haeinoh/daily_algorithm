@@ -8,7 +8,10 @@ public class Main11944 {
 
         StringBuilder sb = new StringBuilder();
         for(int i = 0; i < a; i++) {
-            if(sb.length() > b) break;
+            if(sb.length() > b) {
+                sb = new StringBuilder(sb.substring(0, b));
+                break;
+            }
             sb.append(a);
         }
         System.out.println(sb.toString());
