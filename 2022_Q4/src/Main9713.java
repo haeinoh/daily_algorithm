@@ -4,11 +4,12 @@ public class Main9713 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
-        int prev = 0;
+
         for(int i = 0; i < n; i++) {
             int value = sc.nextInt();
-            if(value % 2 != 0) prev += value;
-            System.out.println(prev);
+            int sum = 0;
+            for(int j = 1; j <= value; j++) if(j % 2 != 0) sum += j;
+            System.out.println(sum);
         }
     }
 }
