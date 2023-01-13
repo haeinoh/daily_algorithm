@@ -3,34 +3,13 @@
 
 ------
 ### 🔆 2023
-
-
+2002 648 0114
 
 ------
 ### 🔆 2022
 5135 359 0619
 3696 437 0722
 3126 487 0822
-
-### Q3 (JUL - SEP)
-1. [최소힙](https://www.acmicpc.net/problem/1927) (S2)
-2. [잃어버린 괄호](https://www.acmicpc.net/problem/1541) (S2)
-3. [두 수의 합](https://www.acmicpc.net/problem/3273) (S3)
-4. [오큰수] (https://www.acmicpc.net/problem/17298) (G4)
-5. [숫자판 점프] (https://www.acmicpc.net/problem/2210) (S2)
-6. [수열] (https://www.acmicpc.net/problem/2559) (S3)
-7. [구간 합 구하기4] (https://www.acmicpc.net/problem/11659) (S3)
-8. [합 구하기] (https://www.acmicpc.net/problem/11441) (S3)
-9. [배열 돌리기3] (https://www.acmicpc.net/problem/16935) (S1)
-10. [로마 숫자 만들기] (https://www.acmicpc.net/problem/16922) (S3)
-11. [이모티콘] (https://www.acmicpc.net/problem/14226) (G4)
-12. [회장뽑기] (https://www.acmicpc.net/problem/2660) (G5)
-13. [성격 유형 검사하기] (https://school.programmers.co.kr/learn/courses/30/lessons/118666) (L1)
-14. [k진수에서 소수 개수 구하기] (https://school.programmers.co.kr/learn/courses/30/lessons/92335) (L2)
-15. [두 큐 합 같게 만들기] (https://school.programmers.co.kr/learn/courses/30/lessons/118667) (L2)
------
-
-### Q4 (OCT - DEC)
 
 ----
 
