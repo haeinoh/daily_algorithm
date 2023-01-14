@@ -2,8 +2,7 @@ import java.util.Scanner;
 
 public class Main4084 {
     public static boolean same(int a , int b, int c, int d) {
-        if(a == b && b == c && c == d) return false;
-        return true;
+        return a != b || b != c || c != d;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
