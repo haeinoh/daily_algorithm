@@ -13,7 +13,7 @@ public class Main1919 {
         for(int i = 0; i < b.length(); i++) bb[b.charAt(i)-'0'-49]++;
 
         int count = 0;
-        
+
         for(int i = 0; i < aa.length; i++) {
             if(aa[i] != bb[i]) count += Math.abs(aa[i] - bb[i]);
         }
