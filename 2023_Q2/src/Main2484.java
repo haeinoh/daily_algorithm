@@ -28,7 +28,7 @@ public class Main2484 {
             else if(b == d) sum = (1000 + b*100);
             else if(c == d) sum = (1000 + c*100);
             else sum = (Math.max(a, Math.max(b, Math.max(c, d))))*100;
-            
+
             max = Math.max(max, sum);
         }
 
