@@ -12,20 +12,31 @@ public class Main24051 {
         for(int i = 0; i < n; i++) arr[i] = sc.nextInt();
 
         int count = 0;
-        int num = 0;
-        for(int i = 1; i < n; i++) {
-            for(int j = i-1; j >= 0; j--) {
-                if(arr[j] > arr[j+1]) {
-                    num = arr[j];
-                    arr[j] = arr[j+1];
-                    arr[j+1] = num;;
+        int answer = 0;
+        loop:for(int i = 0; i < n; i++) {
+            int num =  arr[i];
+            int idx = 0;
+            for(int j = i; j > 0; j--) {
+//                System.out.println("start "  +num + " " + arr[j]);
+                if(arr[j-1] > num) {
+//                    System.out.println(arr[j-1] + " " + arr[j]);
+                    int tmp = arr[j];
+                    arr[j] = arr[j-1];
+//                    System.out.println("before "  + Arrays.toString(arr));
                     count++;
+                    answer = tmp;
+                    if(count == k) break loop;
+                } else {
+                    idx = j;
+                    count++;
+                    break;
                 }
-                if(count == k) break;
-                System.out.println(num + " " + count+ " " + Arrays.toString(arr));
             }
+            arr[idx] = num;
+//            System.out.println("after "  + Arrays.toString(arr));
         }
-        if(count == k) System.out.println(num);
+
+        if(count == k) System.out.println(answer);
         else System.out.println("-1");
     }
 }

@@ -11,19 +11,24 @@ public class Main24052 {
         for(int i = 0; i < n; i++) arr[i] = sc.nextInt();
 
         int count = 0;
-        for(int i = 0; i < n; i++) {
+        loop:for(int i = 0; i < n; i++) {
+            int num =  arr[i];
+            int idx = 0;
             for(int j = i; j > 0; j--) {
-                if(arr[j-1] > arr[j]) {
+                System.out.println("start "  +num + " " + arr[j]);
+                if(arr[j-1] > num) {
                     System.out.println(arr[j-1] + " " + arr[j]);
                     int tmp = arr[j];
                     arr[j] = arr[j-1];
                     System.out.println("before "  + Arrays.toString(arr));
-                    if(count == k) break;
-                    arr[j-1] = tmp;
+                    count++;
+                    if(count == k) break loop;
                 }
-                count++;
-                System.out.println("after "  + Arrays.toString(arr));
+                System.out.println("count " + count);
             }
+            arr[idx] = num;
+            if(count == k) break loop;
+            System.out.println("after "  + Arrays.toString(arr));
         }
 
         if(count < k) System.out.println("-1");
