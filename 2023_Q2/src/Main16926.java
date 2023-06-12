@@ -23,7 +23,6 @@ public class Main16926 {
                 for(int k = m-i-1; k >= i; k--) list.add(arr[n-i-1][k]);
                 for(int k = n-i-2; k > i; k--) list.add(arr[k][i]);
 
-//                System.out.println(list.toString());
                 for(int k = 0; k < r; k++) list.addLast(list.removeFirst());
 
                 for(int k = i; k < m-i; k++) arr[i][k] = list.removeFirst();
